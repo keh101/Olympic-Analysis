@@ -135,7 +135,7 @@ class OlympicMedalGif:
         Create a gif describing the total medal distribution of Winter Olympics around world in a period as set from init.
         The results are stored in ./medal_figures_winter in the same parent directory.
         Most resent year is 2018.
-        :return:
+        :return: None.
         """
         os.mkdir('./medal_figures_winter')
         start = self.start_year
