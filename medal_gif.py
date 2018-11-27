@@ -40,7 +40,7 @@ class OlympicMedalGif:
         self.years_winter = list(dict(self.df_winter.groupby(self.df_winter['Year']).size()).keys()) + [2018]
         self.conv = pd.read_csv('country_code_convert.csv')
 
-    def summer(self):
+    def summer_gif(self):
         """
         Create a gif describing the total medal distribution of Summer Olympics around world in a period as set from init.
         The results are stored in ./medal_figures_summer in the same parent directory.
@@ -130,7 +130,7 @@ class OlympicMedalGif:
         imageio.mimsave('./medal_figures_summer/movie.gif', images, duration=self.duration)
         return
 
-    def winter(self):
+    def winter_gif(self):
         """
         Create a gif describing the total medal distribution of Winter Olympics around world in a period as set from init.
         The results are stored in ./medal_figures_winter in the same parent directory.
@@ -210,4 +210,84 @@ class OlympicMedalGif:
             images.append(imageio.imread(filename))
         imageio.mimsave('./medal_figures_winter/movie.gif', images, duration=duration)
         return
+
+
+class TopNCountry:
+    """
+    A class to plot medal results in a horizontal bar chart for the last 20 years of Olympic Games.
+    """
+    def __init__(self, n_top=8):
+        """
+        Initialize some parameters.
+        :param n_top: (int) Top n countries selected to be visualized on the plot. Default is 8.
+        """
+        assert isinstance(n_top, int), 'Input n_top should be an integer.'
+        assert n_top > 0, 'Input n_top should be larger than 0.'
+        self.n_top = n_top
+        self.df_summer = pd.read_csv('./olympic-games/summer.csv')
+        self.df_winter = pd.read_csv('./olympic-games/winter.csv')
+        self.df_2016_summer = pd.read_csv('./olympic-games/summer_2016.csv')
+        self.df_2018_winter = pd.read_csv('./olympic-games/winter_2018.csv')
+
+    def summer_bar_chart(self):
+        """
+        Method to plot a horizontal bar chart of summer games. The figure is stored
+        in the directory ./medal_figures_summer as png format.
+        :return: None
+        """
+        df_summer = self.df_summer[self.df_summer['Year'] >= 1996]
+        m = list(df_summer['Country'].value_counts()[:self.n_top].index)
+        df_top = df_summer[df_summer['Country'].isin(m)].groupby(['Country', 'Medal']).size()
+        new_index = pd.MultiIndex.from_product([m, ['Gold', 'Silver', 'Bronze']], names=df_top.index.names)
+        df_top = df_top.reindex(new_index)
+        unstacked_df_top = df_top.unstack().reindex(m, columns=['Gold', 'Silver', 'Bronze'])
+        k = []
+        for j in self.df_2016_summer['NOC'].tolist():
+            n = j[j.find('(') + 1:j.find(')')]
+            k.append((n, j))
+        k = dict(k)
+        summer_2016 = pd.DataFrame()
+        for i in m:
+            df_tmp = self.df_2016_summer[self.df_2016_summer['NOC'] == k[i]]
+            summer_2016 = pd.concat([summer_2016, df_tmp])
+        summer_2016['Country'] = m
+        new_summer_2016 = summer_2016.set_index(['Country'])[['Gold', 'Silver', 'Bronze']]
+        unstacked_df_top.add(new_summer_2016).reindex(m[::-1], columns=['Bronze', 'Silver', 'Gold']).plot(kind='barh')
+        plt.title('Medal Result of Summer Olympics since 1996')
+        fname = './medal_figures_summer/summer_bar_chart.png'
+        plt.savefig(fname=fname, format='png')
+        return
+
+    def winter_bar_chart(self):
+        """
+        Method to plot a horizontal bar chart of winter games. The figure is stored
+        in the directory ./medal_figures_winter as png format.
+        :return: None
+        """
+        df_winter = self.df_winter[self.df_winter['Year'] >= 1994]
+        m = list(df_winter['Country'].value_counts()[:self.n_top].index)
+        df_top = df_winter[df_winter['Country'].isin(m)].groupby(['Country', 'Medal']).size()
+        new_index = pd.MultiIndex.from_product([m, ['Gold', 'Silver', 'Bronze']], names=df_top.index.names)
+        df_top = df_top.reindex(new_index)
+        unstacked_df_top = df_top.unstack().reindex(m, columns=['Gold', 'Silver', 'Bronze'])
+        k = []
+        for j in self.df_2018_winter['NOC'].tolist():
+            n = j[j.find('(') + 1:j.find(')')]
+            k.append((n, j))
+        k = dict(k)
+        winter_2018 = pd.DataFrame()
+        for i in m:
+            if i != 'RUS':
+                df_tmp = self.df_2018_winter[self.df_2018_winter['NOC'] == k[i]]
+            else:
+                df_tmp = self.df_2018_winter[self.df_2018_winter['NOC'] == k['OAR']]
+            winter_2018 = pd.concat([winter_2018, df_tmp])
+        winter_2018['Country'] = m
+        new_winter_2018 = winter_2018.set_index(['Country'])[['Gold', 'Silver', 'Bronze']]
+        unstacked_df_top.add(new_winter_2018).reindex(m[::-1], columns=['Bronze', 'Silver', 'Gold']).plot(kind='barh')
+        plt.title('Medal Result of Winter Olympics since 1994')
+        fname = './medal_figures_winter/winter_bar_chart.png'
+        plt.savefig(fname=fname, format='png')
+        return
+
 
