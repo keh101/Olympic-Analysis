@@ -1,0 +1,1835 @@
+,Age,Sport,count
+0,10.0,Gymnastics,1
+1,11.0,Figure Skating,7
+2,11.0,Gymnastics,1
+3,11.0,Rowing,1
+4,11.0,Swimming,4
+5,12.0,Athletics,2
+6,12.0,Diving,1
+7,12.0,Figure Skating,8
+8,12.0,Gymnastics,3
+9,12.0,Rowing,4
+10,12.0,Swimming,21
+11,13.0,Athletics,2
+12,13.0,Diving,9
+13,13.0,Figure Skating,11
+14,13.0,Freestyle Skiing,1
+15,13.0,Gymnastics,36
+16,13.0,Rhythmic Gymnastics,1
+17,13.0,Rowing,12
+18,13.0,Sailing,1
+19,13.0,Short Track Speed Skating,1
+20,13.0,Speed Skating,2
+21,13.0,Swimming,110
+22,13.0,Tennis,1
+23,14.0,Alpine Skiing,12
+24,14.0,Archery,3
+25,14.0,Art Competitions,4
+26,14.0,Athletics,6
+27,14.0,Cycling,2
+28,14.0,Diving,24
+29,14.0,Fencing,1
+30,14.0,Figure Skating,23
+31,14.0,Gymnastics,322
+32,14.0,Handball,1
+33,14.0,Judo,1
+34,14.0,Lacrosse,1
+35,14.0,Rhythmic Gymnastics,7
+36,14.0,Rowing,23
+37,14.0,Sailing,1
+38,14.0,Short Track Speed Skating,3
+39,14.0,Ski Jumping,3
+40,14.0,Snowboarding,1
+41,14.0,Speed Skating,12
+42,14.0,Swimming,384
+43,14.0,Tennis,2
+44,14.0,Water Polo,1
+45,15.0,Alpine Skiing,47
+46,15.0,Archery,4
+47,15.0,Athletics,49
+48,15.0,Bobsleigh,1
+49,15.0,Boxing,5
+50,15.0,Canoeing,1
+51,15.0,Croquet,2
+52,15.0,Cross Country Skiing,2
+53,15.0,Cycling,2
+54,15.0,Diving,52
+55,15.0,Fencing,7
+56,15.0,Figure Skating,65
+57,15.0,Football,5
+58,15.0,Freestyle Skiing,5
+59,15.0,Golf,1
+60,15.0,Gymnastics,918
+61,15.0,Handball,1
+62,15.0,Hockey,1
+63,15.0,Ice Hockey,4
+64,15.0,Judo,1
+65,15.0,Luge,1
+66,15.0,Modern Pentathlon,1
+67,15.0,Nordic Combined,1
+68,15.0,Rhythmic Gymnastics,39
+69,15.0,Rowing,23
+70,15.0,Sailing,6
+71,15.0,Shooting,2
+72,15.0,Short Track Speed Skating,13
+73,15.0,Ski Jumping,9
+74,15.0,Snowboarding,3
+75,15.0,Speed Skating,23
+76,15.0,Swimming,882
+77,15.0,Synchronized Swimming,8
+78,15.0,Table Tennis,5
+79,15.0,Tennis,7
+80,15.0,Volleyball,2
+81,15.0,Water Polo,2
+82,15.0,Weightlifting,2
+83,15.0,Wrestling,1
+84,16.0,Alpine Skiing,135
+85,16.0,Archery,13
+86,16.0,Athletics,137
+87,16.0,Badminton,1
+88,16.0,Baseball,1
+89,16.0,Basketball,2
+90,16.0,Bobsleigh,1
+91,16.0,Boxing,16
+92,16.0,Canoeing,8
+93,16.0,Cross Country Skiing,21
+94,16.0,Cycling,27
+95,16.0,Diving,78
+96,16.0,Equestrianism,2
+97,16.0,Fencing,17
+98,16.0,Figure Skating,125
+99,16.0,Football,9
+100,16.0,Freestyle Skiing,13
+101,16.0,Gymnastics,1365
+102,16.0,Handball,2
+103,16.0,Hockey,7
+104,16.0,Ice Hockey,16
+105,16.0,Judo,11
+106,16.0,Luge,11
+107,16.0,Modern Pentathlon,6
+108,16.0,Nordic Combined,5
+109,16.0,Rhythmic Gymnastics,77
+110,16.0,Rowing,36
+111,16.0,Sailing,16
+112,16.0,Shooting,21
+113,16.0,Short Track Speed Skating,23
+114,16.0,Ski Jumping,41
+115,16.0,Snowboarding,9
+116,16.0,Speed Skating,32
+117,16.0,Swimming,1497
+118,16.0,Synchronized Swimming,14
+119,16.0,Table Tennis,23
+120,16.0,Taekwondo,4
+121,16.0,Tennis,6
+122,16.0,Volleyball,6
+123,16.0,Water Polo,4
+124,16.0,Weightlifting,7
+125,16.0,Wrestling,7
+126,17.0,Alpine Skiing,277
+127,17.0,Archery,45
+128,17.0,Art Competitions,2
+129,17.0,Athletics,346
+130,17.0,Badminton,4
+131,17.0,Basketball,10
+132,17.0,Biathlon,7
+133,17.0,Boxing,108
+134,17.0,Canoeing,42
+135,17.0,Cross Country Skiing,50
+136,17.0,Curling,3
+137,17.0,Cycling,64
+138,17.0,Diving,167
+139,17.0,Equestrianism,1
+140,17.0,Fencing,58
+141,17.0,Figure Skating,123
+142,17.0,Football,54
+143,17.0,Freestyle Skiing,21
+144,17.0,Golf,6
+145,17.0,Gymnastics,1209
+146,17.0,Handball,11
+147,17.0,Hockey,25
+148,17.0,Ice Hockey,27
+149,17.0,Judo,25
+150,17.0,Luge,23
+151,17.0,Modern Pentathlon,2
+152,17.0,Nordic Combined,25
+153,17.0,Rhythmic Gymnastics,90
+154,17.0,Rowing,39
+155,17.0,Sailing,33
+156,17.0,Shooting,46
+157,17.0,Short Track Speed Skating,65
+158,17.0,Ski Jumping,60
+159,17.0,Snowboarding,16
+160,17.0,Softball,2
+161,17.0,Speed Skating,105
+162,17.0,Swimming,1965
+163,17.0,Synchronized Swimming,30
+164,17.0,Table Tennis,20
+165,17.0,Taekwondo,15
+166,17.0,Tennis,33
+167,17.0,Tug-Of-War,1
+168,17.0,Volleyball,28
+169,17.0,Water Polo,30
+170,17.0,Weightlifting,37
+171,17.0,Wrestling,26
+172,18.0,Alpine Skiing,415
+173,18.0,Archery,90
+174,18.0,Art Competitions,1
+175,18.0,Athletics,743
+176,18.0,Badminton,16
+177,18.0,Baseball,7
+178,18.0,Basketball,48
+179,18.0,Beach Volleyball,1
+180,18.0,Biathlon,44
+181,18.0,Bobsleigh,5
+182,18.0,Boxing,229
+183,18.0,Canoeing,127
+184,18.0,Cross Country Skiing,120
+185,18.0,Curling,1
+186,18.0,Cycling,216
+187,18.0,Diving,190
+188,18.0,Equestrianism,17
+189,18.0,Fencing,92
+190,18.0,Figure Skating,147
+191,18.0,Football,123
+192,18.0,Freestyle Skiing,40
+193,18.0,Golf,7
+194,18.0,Gymnastics,1480
+195,18.0,Handball,33
+196,18.0,Hockey,54
+197,18.0,Ice Hockey,91
+198,18.0,Judo,61
+199,18.0,Luge,41
+200,18.0,Modern Pentathlon,7
+201,18.0,Nordic Combined,30
+202,18.0,Rhythmic Gymnastics,127
+203,18.0,Rowing,107
+204,18.0,Rugby,1
+205,18.0,Rugby Sevens,2
+206,18.0,Sailing,59
+207,18.0,Shooting,64
+208,18.0,Short Track Speed Skating,94
+209,18.0,Skeleton,2
+210,18.0,Ski Jumping,130
+211,18.0,Snowboarding,40
+212,18.0,Softball,5
+213,18.0,Speed Skating,162
+214,18.0,Swimming,2377
+215,18.0,Synchronized Swimming,60
+216,18.0,Table Tennis,38
+217,18.0,Taekwondo,28
+218,18.0,Tennis,76
+219,18.0,Trampolining,7
+220,18.0,Triathlon,3
+221,18.0,Volleyball,71
+222,18.0,Water Polo,73
+223,18.0,Weightlifting,63
+224,18.0,Wrestling,87
+225,19.0,Alpine Skiing,601
+226,19.0,Archery,115
+227,19.0,Art Competitions,1
+228,19.0,Athletics,1354
+229,19.0,Badminton,36
+230,19.0,Baseball,25
+231,19.0,Basketball,125
+232,19.0,Beach Volleyball,5
+233,19.0,Biathlon,81
+234,19.0,Bobsleigh,19
+235,19.0,Boxing,435
+236,19.0,Canoeing,241
+237,19.0,Cross Country Skiing,226
+238,19.0,Curling,7
+239,19.0,Cycling,498
+240,19.0,Diving,216
+241,19.0,Equestrianism,33
+242,19.0,Fencing,226
+243,19.0,Figure Skating,201
+244,19.0,Football,319
+245,19.0,Freestyle Skiing,52
+246,19.0,Golf,4
+247,19.0,Gymnastics,1622
+248,19.0,Handball,51
+249,19.0,Hockey,134
+250,19.0,Ice Hockey,145
+251,19.0,Jeu De Paume,1
+252,19.0,Judo,103
+253,19.0,Luge,76
+254,19.0,Modern Pentathlon,24
+255,19.0,Nordic Combined,65
+256,19.0,Racquets,1
+257,19.0,Rhythmic Gymnastics,103
+258,19.0,Rowing,304
+259,19.0,Rugby,1
+260,19.0,Rugby Sevens,6
+261,19.0,Sailing,102
+262,19.0,Shooting,120
+263,19.0,Short Track Speed Skating,133
+264,19.0,Skeleton,4
+265,19.0,Ski Jumping,172
+266,19.0,Snowboarding,42
+267,19.0,Softball,8
+268,19.0,Speed Skating,265
+269,19.0,Swimming,2546
+270,19.0,Synchronized Swimming,67
+271,19.0,Table Tennis,93
+272,19.0,Taekwondo,28
+273,19.0,Tennis,109
+274,19.0,Trampolining,10
+275,19.0,Triathlon,2
+276,19.0,Tug-Of-War,1
+277,19.0,Volleyball,104
+278,19.0,Water Polo,115
+279,19.0,Weightlifting,121
+280,19.0,Wrestling,145
+281,20.0,Alpine Skiing,759
+282,20.0,Archery,135
+283,20.0,Art Competitions,7
+284,20.0,Athletics,2177
+285,20.0,Badminton,55
+286,20.0,Baseball,42
+287,20.0,Basketball,210
+288,20.0,Beach Volleyball,1
+289,20.0,Biathlon,163
+290,20.0,Bobsleigh,45
+291,20.0,Boxing,650
+292,20.0,Canoeing,335
+293,20.0,Croquet,1
+294,20.0,Cross Country Skiing,328
+295,20.0,Curling,4
+296,20.0,Cycling,795
+297,20.0,Diving,216
+298,20.0,Equestrianism,77
+299,20.0,Fencing,319
+300,20.0,Figure Skating,192
+301,20.0,Football,537
+302,20.0,Freestyle Skiing,57
+303,20.0,Golf,14
+304,20.0,Gymnastics,1895
+305,20.0,Handball,129
+306,20.0,Hockey,228
+307,20.0,Ice Hockey,252
+308,20.0,Judo,171
+309,20.0,Lacrosse,1
+310,20.0,Luge,132
+311,20.0,Military Ski Patrol,2
+312,20.0,Modern Pentathlon,43
+313,20.0,Nordic Combined,72
+314,20.0,Rhythmic Gymnastics,71
+315,20.0,Rowing,533
+316,20.0,Rugby,9
+317,20.0,Rugby Sevens,11
+318,20.0,Sailing,150
+319,20.0,Shooting,169
+320,20.0,Short Track Speed Skating,132
+321,20.0,Skeleton,5
+322,20.0,Ski Jumping,198
+323,20.0,Snowboarding,66
+324,20.0,Softball,15
+325,20.0,Speed Skating,403
+326,20.0,Swimming,2261
+327,20.0,Synchronized Swimming,93
+328,20.0,Table Tennis,94
+329,20.0,Taekwondo,55
+330,20.0,Tennis,125
+331,20.0,Trampolining,12
+332,20.0,Triathlon,10
+333,20.0,Tug-Of-War,3
+334,20.0,Volleyball,169
+335,20.0,Water Polo,184
+336,20.0,Weightlifting,165
+337,20.0,Wrestling,281
+338,21.0,Alpine Skiing,973
+339,21.0,Archery,149
+340,21.0,Art Competitions,2
+341,21.0,Athletics,2866
+342,21.0,Badminton,101
+343,21.0,Baseball,69
+344,21.0,Basketball,339
+345,21.0,Beach Volleyball,8
+346,21.0,Biathlon,258
+347,21.0,Bobsleigh,68
+348,21.0,Boxing,646
+349,21.0,Canoeing,466
+350,21.0,Cricket,1
+351,21.0,Cross Country Skiing,507
+352,21.0,Curling,11
+353,21.0,Cycling,1001
+354,21.0,Diving,269
+355,21.0,Equestrianism,102
+356,21.0,Fencing,429
+357,21.0,Figure Skating,197
+358,21.0,Football,774
+359,21.0,Freestyle Skiing,75
+360,21.0,Golf,10
+361,21.0,Gymnastics,2073
+362,21.0,Handball,201
+363,21.0,Hockey,310
+364,21.0,Ice Hockey,355
+365,21.0,Jeu De Paume,1
+366,21.0,Judo,250
+367,21.0,Lacrosse,2
+368,21.0,Luge,136
+369,21.0,Military Ski Patrol,4
+370,21.0,Modern Pentathlon,97
+371,21.0,Nordic Combined,118
+372,21.0,Polo,1
+373,21.0,Racquets,2
+374,21.0,Rhythmic Gymnastics,55
+375,21.0,Rowing,811
+376,21.0,Rugby,15
+377,21.0,Rugby Sevens,10
+378,21.0,Sailing,208
+379,21.0,Shooting,251
+380,21.0,Short Track Speed Skating,145
+381,21.0,Skeleton,7
+382,21.0,Ski Jumping,232
+383,21.0,Snowboarding,59
+384,21.0,Softball,26
+385,21.0,Speed Skating,506
+386,21.0,Swimming,2345
+387,21.0,Synchronized Swimming,115
+388,21.0,Table Tennis,111
+389,21.0,Taekwondo,51
+390,21.0,Tennis,174
+391,21.0,Trampolining,4
+392,21.0,Triathlon,22
+393,21.0,Tug-Of-War,6
+394,21.0,Volleyball,232
+395,21.0,Water Polo,253
+396,21.0,Weightlifting,248
+397,21.0,Wrestling,407
+398,22.0,Alpine Skiing,849
+399,22.0,Alpinism,1
+400,22.0,Archery,135
+401,22.0,Art Competitions,19
+402,22.0,Athletics,3317
+403,22.0,Badminton,110
+404,22.0,Baseball,65
+405,22.0,Basketball,400
+406,22.0,Beach Volleyball,14
+407,22.0,Biathlon,305
+408,22.0,Bobsleigh,94
+409,22.0,Boxing,728
+410,22.0,Canoeing,493
+411,22.0,Croquet,2
+412,22.0,Cross Country Skiing,707
+413,22.0,Curling,13
+414,22.0,Cycling,956
+415,22.0,Diving,243
+416,22.0,Equestrianism,114
+417,22.0,Fencing,591
+418,22.0,Figure Skating,202
+419,22.0,Football,1023
+420,22.0,Freestyle Skiing,73
+421,22.0,Golf,15
+422,22.0,Gymnastics,2016
+423,22.0,Handball,255
+424,22.0,Hockey,387
+425,22.0,Ice Hockey,456
+426,22.0,Judo,308
+427,22.0,Lacrosse,2
+428,22.0,Luge,146
+429,22.0,Military Ski Patrol,2
+430,22.0,Modern Pentathlon,108
+431,22.0,Nordic Combined,139
+432,22.0,Polo,1
+433,22.0,Rhythmic Gymnastics,34
+434,22.0,Rowing,941
+435,22.0,Rugby,9
+436,22.0,Rugby Sevens,25
+437,22.0,Sailing,261
+438,22.0,Shooting,258
+439,22.0,Short Track Speed Skating,139
+440,22.0,Skeleton,3
+441,22.0,Ski Jumping,244
+442,22.0,Snowboarding,82
+443,22.0,Softball,26
+444,22.0,Speed Skating,515
+445,22.0,Swimming,2015
+446,22.0,Synchronized Swimming,114
+447,22.0,Table Tennis,113
+448,22.0,Taekwondo,54
+449,22.0,Tennis,219
+450,22.0,Trampolining,8
+451,22.0,Triathlon,22
+452,22.0,Tug-Of-War,6
+453,22.0,Volleyball,297
+454,22.0,Water Polo,285
+455,22.0,Weightlifting,316
+456,22.0,Wrestling,539
+457,23.0,Alpine Skiing,900
+458,23.0,Archery,168
+459,23.0,Art Competitions,22
+460,23.0,Athletics,3744
+461,23.0,Badminton,118
+462,23.0,Baseball,72
+463,23.0,Basketball,416
+464,23.0,Beach Volleyball,20
+465,23.0,Biathlon,395
+466,23.0,Bobsleigh,147
+467,23.0,Boxing,620
+468,23.0,Canoeing,552
+469,23.0,Cross Country Skiing,841
+470,23.0,Curling,24
+471,23.0,Cycling,1051
+472,23.0,Diving,223
+473,23.0,Equestrianism,142
+474,23.0,Fencing,653
+475,23.0,Figure Skating,171
+476,23.0,Football,841
+477,23.0,Freestyle Skiing,89
+478,23.0,Golf,11
+479,23.0,Gymnastics,1942
+480,23.0,Handball,306
+481,23.0,Hockey,478
+482,23.0,Ice Hockey,494
+483,23.0,Judo,350
+484,23.0,Lacrosse,2
+485,23.0,Luge,129
+486,23.0,Military Ski Patrol,1
+487,23.0,Modern Pentathlon,143
+488,23.0,Nordic Combined,154
+489,23.0,Racquets,1
+490,23.0,Rhythmic Gymnastics,23
+491,23.0,Rowing,954
+492,23.0,Rugby,17
+493,23.0,Rugby Sevens,29
+494,23.0,Sailing,318
+495,23.0,Shooting,325
+496,23.0,Short Track Speed Skating,151
+497,23.0,Skeleton,6
+498,23.0,Ski Jumping,225
+499,23.0,Snowboarding,78
+500,23.0,Softball,40
+501,23.0,Speed Skating,554
+502,23.0,Swimming,1698
+503,23.0,Synchronized Swimming,98
+504,23.0,Table Tennis,145
+505,23.0,Taekwondo,52
+506,23.0,Tennis,234
+507,23.0,Trampolining,24
+508,23.0,Triathlon,24
+509,23.0,Tug-Of-War,10
+510,23.0,Volleyball,337
+511,23.0,Water Polo,313
+512,23.0,Weightlifting,386
+513,23.0,Wrestling,614
+514,24.0,Alpine Skiing,895
+515,24.0,Archery,138
+516,24.0,Art Competitions,41
+517,24.0,Athletics,3597
+518,24.0,Badminton,155
+519,24.0,Baseball,79
+520,24.0,Basketball,442
+521,24.0,Beach Volleyball,25
+522,24.0,Biathlon,468
+523,24.0,Bobsleigh,183
+524,24.0,Boxing,527
+525,24.0,Canoeing,563
+526,24.0,Cricket,5
+527,24.0,Cross Country Skiing,857
+528,24.0,Curling,18
+529,24.0,Cycling,942
+530,24.0,Diving,200
+531,24.0,Equestrianism,176
+532,24.0,Fencing,641
+533,24.0,Figure Skating,156
+534,24.0,Football,496
+535,24.0,Freestyle Skiing,90
+536,24.0,Golf,8
+537,24.0,Gymnastics,2347
+538,24.0,Handball,328
+539,24.0,Hockey,554
+540,24.0,Ice Hockey,477
+541,24.0,Judo,381
+542,24.0,Lacrosse,3
+543,24.0,Luge,149
+544,24.0,Military Ski Patrol,2
+545,24.0,Modern Pentathlon,142
+546,24.0,Nordic Combined,142
+547,24.0,Polo,4
+548,24.0,Rhythmic Gymnastics,15
+549,24.0,Rowing,960
+550,24.0,Rugby,13
+551,24.0,Rugby Sevens,33
+552,24.0,Sailing,384
+553,24.0,Shooting,367
+554,24.0,Short Track Speed Skating,158
+555,24.0,Skeleton,11
+556,24.0,Ski Jumping,228
+557,24.0,Snowboarding,87
+558,24.0,Softball,58
+559,24.0,Speed Skating,608
+560,24.0,Swimming,1326
+561,24.0,Synchronized Swimming,78
+562,24.0,Table Tennis,157
+563,24.0,Taekwondo,58
+564,24.0,Tennis,224
+565,24.0,Trampolining,11
+566,24.0,Triathlon,34
+567,24.0,Tug-Of-War,8
+568,24.0,Volleyball,343
+569,24.0,Water Polo,327
+570,24.0,Weightlifting,355
+571,24.0,Wrestling,646
+572,25.0,Alpine Skiing,701
+573,25.0,Archery,124
+574,25.0,Art Competitions,25
+575,25.0,Athletics,3431
+576,25.0,Badminton,142
+577,25.0,Baseball,67
+578,25.0,Basketball,420
+579,25.0,Beach Volleyball,42
+580,25.0,Biathlon,453
+581,25.0,Bobsleigh,221
+582,25.0,Boxing,478
+583,25.0,Canoeing,534
+584,25.0,Cricket,1
+585,25.0,Cross Country Skiing,794
+586,25.0,Curling,30
+587,25.0,Cycling,858
+588,25.0,Diving,200
+589,25.0,Equestrianism,228
+590,25.0,Fencing,696
+591,25.0,Figure Skating,147
+592,25.0,Football,432
+593,25.0,Freestyle Skiing,68
+594,25.0,Golf,9
+595,25.0,Gymnastics,1631
+596,25.0,Handball,324
+597,25.0,Hockey,501
+598,25.0,Ice Hockey,498
+599,25.0,Judo,397
+600,25.0,Lacrosse,6
+601,25.0,Luge,106
+602,25.0,Military Ski Patrol,4
+603,25.0,Modern Pentathlon,170
+604,25.0,Nordic Combined,118
+605,25.0,Racquets,2
+606,25.0,Rhythmic Gymnastics,8
+607,25.0,Rowing,988
+608,25.0,Rugby,14
+609,25.0,Rugby Sevens,28
+610,25.0,Sailing,401
+611,25.0,Shooting,411
+612,25.0,Short Track Speed Skating,120
+613,25.0,Skeleton,15
+614,25.0,Ski Jumping,202
+615,25.0,Snowboarding,57
+616,25.0,Softball,37
+617,25.0,Speed Skating,449
+618,25.0,Swimming,965
+619,25.0,Synchronized Swimming,79
+620,25.0,Table Tennis,139
+621,25.0,Taekwondo,53
+622,25.0,Tennis,214
+623,25.0,Trampolining,8
+624,25.0,Triathlon,43
+625,25.0,Tug-Of-War,4
+626,25.0,Volleyball,331
+627,25.0,Water Polo,326
+628,25.0,Weightlifting,313
+629,25.0,Wrestling,644
+630,26.0,Aeronautics,1
+631,26.0,Alpine Skiing,494
+632,26.0,Archery,121
+633,26.0,Art Competitions,40
+634,26.0,Athletics,3045
+635,26.0,Badminton,157
+636,26.0,Baseball,68
+637,26.0,Basketball,369
+638,26.0,Basque Pelota,2
+639,26.0,Beach Volleyball,45
+640,26.0,Biathlon,444
+641,26.0,Bobsleigh,272
+642,26.0,Boxing,368
+643,26.0,Canoeing,462
+644,26.0,Cricket,2
+645,26.0,Cross Country Skiing,781
+646,26.0,Curling,22
+647,26.0,Cycling,649
+648,26.0,Diving,151
+649,26.0,Equestrianism,208
+650,26.0,Fencing,658
+651,26.0,Figure Skating,129
+652,26.0,Football,418
+653,26.0,Freestyle Skiing,71
+654,26.0,Golf,13
+655,26.0,Gymnastics,1464
+656,26.0,Handball,330
+657,26.0,Hockey,471
+658,26.0,Ice Hockey,455
+659,26.0,Judo,349
+660,26.0,Lacrosse,3
+661,26.0,Luge,89
+662,26.0,Military Ski Patrol,2
+663,26.0,Modern Pentathlon,134
+664,26.0,Motorboating,3
+665,26.0,Nordic Combined,106
+666,26.0,Polo,2
+667,26.0,Rhythmic Gymnastics,4
+668,26.0,Rowing,923
+669,26.0,Rugby,11
+670,26.0,Rugby Sevens,26
+671,26.0,Sailing,371
+672,26.0,Shooting,437
+673,26.0,Short Track Speed Skating,85
+674,26.0,Skeleton,13
+675,26.0,Ski Jumping,142
+676,26.0,Snowboarding,76
+677,26.0,Softball,59
+678,26.0,Speed Skating,409
+679,26.0,Swimming,691
+680,26.0,Synchronized Swimming,55
+681,26.0,Table Tennis,123
+682,26.0,Taekwondo,43
+683,26.0,Tennis,213
+684,26.0,Trampolining,10
+685,26.0,Triathlon,44
+686,26.0,Tug-Of-War,7
+687,26.0,Volleyball,313
+688,26.0,Water Polo,276
+689,26.0,Weightlifting,322
+690,26.0,Wrestling,624
+691,27.0,Alpine Skiing,463
+692,27.0,Alpinism,2
+693,27.0,Archery,113
+694,27.0,Art Competitions,47
+695,27.0,Athletics,2747
+696,27.0,Badminton,125
+697,27.0,Baseball,67
+698,27.0,Basketball,372
+699,27.0,Beach Volleyball,50
+700,27.0,Biathlon,383
+701,27.0,Bobsleigh,244
+702,27.0,Boxing,288
+703,27.0,Canoeing,446
+704,27.0,Cross Country Skiing,730
+705,27.0,Curling,28
+706,27.0,Cycling,646
+707,27.0,Diving,143
+708,27.0,Equestrianism,234
+709,27.0,Fencing,608
+710,27.0,Figure Skating,79
+711,27.0,Football,327
+712,27.0,Freestyle Skiing,62
+713,27.0,Golf,9
+714,27.0,Gymnastics,1144
+715,27.0,Handball,335
+716,27.0,Hockey,443
+717,27.0,Ice Hockey,443
+718,27.0,Judo,283
+719,27.0,Lacrosse,2
+720,27.0,Luge,91
+721,27.0,Modern Pentathlon,149
+722,27.0,Motorboating,1
+723,27.0,Nordic Combined,101
+724,27.0,Polo,1
+725,27.0,Rhythmic Gymnastics,2
+726,27.0,Rowing,742
+727,27.0,Rugby,5
+728,27.0,Rugby Sevens,22
+729,27.0,Sailing,402
+730,27.0,Shooting,433
+731,27.0,Short Track Speed Skating,79
+732,27.0,Skeleton,10
+733,27.0,Ski Jumping,143
+734,27.0,Snowboarding,78
+735,27.0,Softball,47
+736,27.0,Speed Skating,386
+737,27.0,Swimming,561
+738,27.0,Synchronized Swimming,29
+739,27.0,Table Tennis,151
+740,27.0,Taekwondo,40
+741,27.0,Tennis,192
+742,27.0,Trampolining,15
+743,27.0,Triathlon,46
+744,27.0,Tug-Of-War,8
+745,27.0,Volleyball,285
+746,27.0,Water Polo,288
+747,27.0,Weightlifting,311
+748,27.0,Wrestling,544
+749,28.0,Alpine Skiing,366
+750,28.0,Archery,94
+751,28.0,Art Competitions,43
+752,28.0,Athletics,2288
+753,28.0,Badminton,115
+754,28.0,Baseball,71
+755,28.0,Basketball,306
+756,28.0,Beach Volleyball,42
+757,28.0,Biathlon,440
+758,28.0,Bobsleigh,249
+759,28.0,Boxing,215
+760,28.0,Canoeing,413
+761,28.0,Cross Country Skiing,716
+762,28.0,Curling,25
+763,28.0,Cycling,533
+764,28.0,Diving,91
+765,28.0,Equestrianism,281
+766,28.0,Fencing,632
+767,28.0,Figure Skating,67
+768,28.0,Football,305
+769,28.0,Freestyle Skiing,53
+770,28.0,Golf,14
+771,28.0,Gymnastics,967
+772,28.0,Handball,301
+773,28.0,Hockey,400
+774,28.0,Ice Hockey,339
+775,28.0,Judo,308
+776,28.0,Luge,84
+777,28.0,Military Ski Patrol,1
+778,28.0,Modern Pentathlon,118
+779,28.0,Nordic Combined,84
+780,28.0,Polo,5
+781,28.0,Rhythmic Gymnastics,1
+782,28.0,Rowing,617
+783,28.0,Rugby,4
+784,28.0,Rugby Sevens,31
+785,28.0,Sailing,374
+786,28.0,Shooting,493
+787,28.0,Short Track Speed Skating,57
+788,28.0,Skeleton,11
+789,28.0,Ski Jumping,118
+790,28.0,Snowboarding,49
+791,28.0,Softball,34
+792,28.0,Speed Skating,327
+793,28.0,Swimming,361
+794,28.0,Synchronized Swimming,21
+795,28.0,Table Tennis,123
+796,28.0,Taekwondo,41
+797,28.0,Tennis,189
+798,28.0,Trampolining,9
+799,28.0,Triathlon,45
+800,28.0,Tug-Of-War,3
+801,28.0,Volleyball,206
+802,28.0,Water Polo,248
+803,28.0,Weightlifting,248
+804,28.0,Wrestling,467
+805,29.0,Alpine Skiing,282
+806,29.0,Archery,69
+807,29.0,Art Competitions,76
+808,29.0,Athletics,1795
+809,29.0,Badminton,82
+810,29.0,Baseball,48
+811,29.0,Basketball,249
+812,29.0,Beach Volleyball,56
+813,29.0,Biathlon,319
+814,29.0,Bobsleigh,236
+815,29.0,Boxing,150
+816,29.0,Canoeing,333
+817,29.0,Cricket,1
+818,29.0,Cross Country Skiing,549
+819,29.0,Curling,25
+820,29.0,Cycling,401
+821,29.0,Diving,77
+822,29.0,Equestrianism,289
+823,29.0,Fencing,607
+824,29.0,Figure Skating,60
+825,29.0,Football,220
+826,29.0,Freestyle Skiing,38
+827,29.0,Golf,10
+828,29.0,Gymnastics,777
+829,29.0,Handball,254
+830,29.0,Hockey,319
+831,29.0,Ice Hockey,320
+832,29.0,Jeu De Paume,2
+833,29.0,Judo,217
+834,29.0,Lacrosse,2
+835,29.0,Luge,53
+836,29.0,Modern Pentathlon,135
+837,29.0,Motorboating,3
+838,29.0,Nordic Combined,51
+839,29.0,Polo,2
+840,29.0,Racquets,2
+841,29.0,Rowing,515
+842,29.0,Rugby,7
+843,29.0,Rugby Sevens,20
+844,29.0,Sailing,332
+845,29.0,Shooting,429
+846,29.0,Short Track Speed Skating,64
+847,29.0,Skeleton,17
+848,29.0,Ski Jumping,78
+849,29.0,Snowboarding,43
+850,29.0,Softball,24
+851,29.0,Speed Skating,209
+852,29.0,Swimming,239
+853,29.0,Synchronized Swimming,19
+854,29.0,Table Tennis,99
+855,29.0,Taekwondo,24
+856,29.0,Tennis,151
+857,29.0,Trampolining,4
+858,29.0,Triathlon,51
+859,29.0,Tug-Of-War,14
+860,29.0,Volleyball,161
+861,29.0,Water Polo,229
+862,29.0,Weightlifting,194
+863,29.0,Wrestling,431
+864,30.0,Alpine Skiing,172
+865,30.0,Archery,74
+866,30.0,Art Competitions,41
+867,30.0,Athletics,1545
+868,30.0,Badminton,84
+869,30.0,Baseball,51
+870,30.0,Basketball,189
+871,30.0,Beach Volleyball,51
+872,30.0,Biathlon,255
+873,30.0,Bobsleigh,188
+874,30.0,Boxing,101
+875,30.0,Canoeing,273
+876,30.0,Croquet,2
+877,30.0,Cross Country Skiing,508
+878,30.0,Curling,25
+879,30.0,Cycling,342
+880,30.0,Diving,55
+881,30.0,Equestrianism,341
+882,30.0,Fencing,482
+883,30.0,Figure Skating,55
+884,30.0,Football,176
+885,30.0,Freestyle Skiing,36
+886,30.0,Golf,12
+887,30.0,Gymnastics,647
+888,30.0,Handball,178
+889,30.0,Hockey,251
+890,30.0,Ice Hockey,288
+891,30.0,Jeu De Paume,1
+892,30.0,Judo,173
+893,30.0,Lacrosse,4
+894,30.0,Luge,42
+895,30.0,Modern Pentathlon,79
+896,30.0,Nordic Combined,32
+897,30.0,Polo,4
+898,30.0,Rhythmic Gymnastics,1
+899,30.0,Rowing,412
+900,30.0,Rugby,3
+901,30.0,Rugby Sevens,15
+902,30.0,Sailing,322
+903,30.0,Shooting,421
+904,30.0,Short Track Speed Skating,34
+905,30.0,Skeleton,13
+906,30.0,Ski Jumping,37
+907,30.0,Snowboarding,32
+908,30.0,Softball,23
+909,30.0,Speed Skating,168
+910,30.0,Swimming,151
+911,30.0,Synchronized Swimming,7
+912,30.0,Table Tennis,88
+913,30.0,Taekwondo,16
+914,30.0,Tennis,112
+915,30.0,Trampolining,11
+916,30.0,Triathlon,47
+917,30.0,Tug-Of-War,7
+918,30.0,Volleyball,166
+919,30.0,Water Polo,164
+920,30.0,Weightlifting,165
+921,30.0,Wrestling,316
+922,31.0,Alpine Skiing,145
+923,31.0,Archery,60
+924,31.0,Art Competitions,48
+925,31.0,Athletics,1067
+926,31.0,Badminton,43
+927,31.0,Baseball,49
+928,31.0,Basketball,153
+929,31.0,Beach Volleyball,45
+930,31.0,Biathlon,210
+931,31.0,Bobsleigh,157
+932,31.0,Boxing,57
+933,31.0,Canoeing,213
+934,31.0,Cricket,2
+935,31.0,Cross Country Skiing,376
+936,31.0,Curling,14
+937,31.0,Cycling,350
+938,31.0,Diving,41
+939,31.0,Equestrianism,298
+940,31.0,Fencing,499
+941,31.0,Figure Skating,24
+942,31.0,Football,123
+943,31.0,Freestyle Skiing,33
+944,31.0,Golf,13
+945,31.0,Gymnastics,419
+946,31.0,Handball,169
+947,31.0,Hockey,205
+948,31.0,Ice Hockey,218
+949,31.0,Jeu De Paume,1
+950,31.0,Judo,120
+951,31.0,Lacrosse,1
+952,31.0,Luge,38
+953,31.0,Modern Pentathlon,82
+954,31.0,Motorboating,2
+955,31.0,Nordic Combined,18
+956,31.0,Polo,5
+957,31.0,Racquets,2
+958,31.0,Rowing,290
+959,31.0,Rugby,1
+960,31.0,Rugby Sevens,13
+961,31.0,Sailing,291
+962,31.0,Shooting,463
+963,31.0,Short Track Speed Skating,17
+964,31.0,Skeleton,9
+965,31.0,Ski Jumping,44
+966,31.0,Snowboarding,34
+967,31.0,Softball,17
+968,31.0,Speed Skating,147
+969,31.0,Swimming,91
+970,31.0,Synchronized Swimming,10
+971,31.0,Table Tennis,79
+972,31.0,Taekwondo,12
+973,31.0,Tennis,96
+974,31.0,Trampolining,8
+975,31.0,Triathlon,33
+976,31.0,Tug-Of-War,4
+977,31.0,Volleyball,96
+978,31.0,Water Polo,137
+979,31.0,Weightlifting,127
+980,31.0,Wrestling,240
+981,32.0,Alpine Skiing,100
+982,32.0,Archery,54
+983,32.0,Art Competitions,67
+984,32.0,Athletics,915
+985,32.0,Badminton,41
+986,32.0,Baseball,24
+987,32.0,Basketball,100
+988,32.0,Beach Volleyball,37
+989,32.0,Biathlon,237
+990,32.0,Bobsleigh,156
+991,32.0,Boxing,54
+992,32.0,Canoeing,181
+993,32.0,Cricket,1
+994,32.0,Cross Country Skiing,298
+995,32.0,Curling,20
+996,32.0,Cycling,238
+997,32.0,Diving,27
+998,32.0,Equestrianism,267
+999,32.0,Fencing,398
+1000,32.0,Figure Skating,8
+1001,32.0,Football,83
+1002,32.0,Freestyle Skiing,13
+1003,32.0,Golf,3
+1004,32.0,Gymnastics,294
+1005,32.0,Handball,143
+1006,32.0,Hockey,147
+1007,32.0,Ice Hockey,172
+1008,32.0,Jeu De Paume,1
+1009,32.0,Judo,97
+1010,32.0,Lacrosse,2
+1011,32.0,Luge,32
+1012,32.0,Military Ski Patrol,1
+1013,32.0,Modern Pentathlon,43
+1014,32.0,Nordic Combined,25
+1015,32.0,Polo,7
+1016,32.0,Rowing,214
+1017,32.0,Rugby,1
+1018,32.0,Rugby Sevens,10
+1019,32.0,Sailing,261
+1020,32.0,Shooting,536
+1021,32.0,Short Track Speed Skating,10
+1022,32.0,Skeleton,12
+1023,32.0,Ski Jumping,26
+1024,32.0,Snowboarding,18
+1025,32.0,Softball,14
+1026,32.0,Speed Skating,81
+1027,32.0,Swimming,66
+1028,32.0,Synchronized Swimming,3
+1029,32.0,Table Tennis,72
+1030,32.0,Taekwondo,16
+1031,32.0,Tennis,71
+1032,32.0,Trampolining,2
+1033,32.0,Triathlon,28
+1034,32.0,Tug-Of-War,3
+1035,32.0,Volleyball,83
+1036,32.0,Water Polo,118
+1037,32.0,Weightlifting,106
+1038,32.0,Wrestling,209
+1039,33.0,Alpine Skiing,57
+1040,33.0,Alpinism,3
+1041,33.0,Archery,59
+1042,33.0,Art Competitions,70
+1043,33.0,Athletics,620
+1044,33.0,Badminton,20
+1045,33.0,Baseball,27
+1046,33.0,Basketball,71
+1047,33.0,Beach Volleyball,29
+1048,33.0,Biathlon,111
+1049,33.0,Bobsleigh,134
+1050,33.0,Boxing,26
+1051,33.0,Canoeing,118
+1052,33.0,Cricket,1
+1053,33.0,Croquet,2
+1054,33.0,Cross Country Skiing,244
+1055,33.0,Curling,18
+1056,33.0,Cycling,163
+1057,33.0,Diving,12
+1058,33.0,Equestrianism,294
+1059,33.0,Fencing,361
+1060,33.0,Figure Skating,12
+1061,33.0,Football,45
+1062,33.0,Freestyle Skiing,13
+1063,33.0,Golf,3
+1064,33.0,Gymnastics,227
+1065,33.0,Handball,95
+1066,33.0,Hockey,112
+1067,33.0,Ice Hockey,131
+1068,33.0,Judo,62
+1069,33.0,Lacrosse,2
+1070,33.0,Luge,18
+1071,33.0,Modern Pentathlon,48
+1072,33.0,Motorboating,2
+1073,33.0,Nordic Combined,18
+1074,33.0,Polo,8
+1075,33.0,Rowing,163
+1076,33.0,Rugby,1
+1077,33.0,Rugby Sevens,8
+1078,33.0,Sailing,224
+1079,33.0,Shooting,475
+1080,33.0,Short Track Speed Skating,5
+1081,33.0,Skeleton,10
+1082,33.0,Ski Jumping,14
+1083,33.0,Snowboarding,24
+1084,33.0,Softball,9
+1085,33.0,Speed Skating,78
+1086,33.0,Swimming,40
+1087,33.0,Table Tennis,56
+1088,33.0,Taekwondo,8
+1089,33.0,Tennis,60
+1090,33.0,Trampolining,2
+1091,33.0,Triathlon,18
+1092,33.0,Tug-Of-War,10
+1093,33.0,Volleyball,54
+1094,33.0,Water Polo,95
+1095,33.0,Weightlifting,76
+1096,33.0,Wrestling,134
+1097,34.0,Alpine Skiing,34
+1098,34.0,Archery,55
+1099,34.0,Art Competitions,56
+1100,34.0,Athletics,504
+1101,34.0,Badminton,26
+1102,34.0,Baseball,11
+1103,34.0,Basketball,44
+1104,34.0,Beach Volleyball,31
+1105,34.0,Biathlon,102
+1106,34.0,Bobsleigh,101
+1107,34.0,Boxing,12
+1108,34.0,Canoeing,108
+1109,34.0,Cross Country Skiing,149
+1110,34.0,Curling,23
+1111,34.0,Cycling,131
+1112,34.0,Diving,11
+1113,34.0,Equestrianism,274
+1114,34.0,Fencing,323
+1115,34.0,Figure Skating,17
+1116,34.0,Football,30
+1117,34.0,Freestyle Skiing,11
+1118,34.0,Golf,9
+1119,34.0,Gymnastics,244
+1120,34.0,Handball,59
+1121,34.0,Hockey,68
+1122,34.0,Ice Hockey,80
+1123,34.0,Judo,40
+1124,34.0,Luge,14
+1125,34.0,Modern Pentathlon,38
+1126,34.0,Nordic Combined,9
+1127,34.0,Polo,3
+1128,34.0,Rowing,141
+1129,34.0,Rugby Sevens,7
+1130,34.0,Sailing,235
+1131,34.0,Shooting,467
+1132,34.0,Short Track Speed Skating,5
+1133,34.0,Skeleton,7
+1134,34.0,Ski Jumping,12
+1135,34.0,Snowboarding,13
+1136,34.0,Softball,9
+1137,34.0,Speed Skating,52
+1138,34.0,Swimming,27
+1139,34.0,Synchronized Swimming,2
+1140,34.0,Table Tennis,35
+1141,34.0,Taekwondo,3
+1142,34.0,Tennis,56
+1143,34.0,Trampolining,4
+1144,34.0,Triathlon,24
+1145,34.0,Tug-Of-War,7
+1146,34.0,Volleyball,44
+1147,34.0,Water Polo,66
+1148,34.0,Weightlifting,45
+1149,34.0,Wrestling,107
+1150,35.0,Alpine Skiing,30
+1151,35.0,Alpinism,1
+1152,35.0,Archery,35
+1153,35.0,Art Competitions,76
+1154,35.0,Athletics,362
+1155,35.0,Badminton,11
+1156,35.0,Baseball,19
+1157,35.0,Basketball,40
+1158,35.0,Beach Volleyball,21
+1159,35.0,Biathlon,68
+1160,35.0,Bobsleigh,103
+1161,35.0,Boxing,5
+1162,35.0,Canoeing,71
+1163,35.0,Cricket,2
+1164,35.0,Cross Country Skiing,80
+1165,35.0,Curling,24
+1166,35.0,Cycling,106
+1167,35.0,Diving,7
+1168,35.0,Equestrianism,271
+1169,35.0,Fencing,277
+1170,35.0,Figure Skating,9
+1171,35.0,Football,10
+1172,35.0,Freestyle Skiing,3
+1173,35.0,Golf,6
+1174,35.0,Gymnastics,139
+1175,35.0,Handball,45
+1176,35.0,Hockey,41
+1177,35.0,Ice Hockey,97
+1178,35.0,Judo,22
+1179,35.0,Lacrosse,1
+1180,35.0,Luge,15
+1181,35.0,Modern Pentathlon,25
+1182,35.0,Nordic Combined,6
+1183,35.0,Polo,6
+1184,35.0,Rowing,88
+1185,35.0,Rugby Sevens,2
+1186,35.0,Sailing,186
+1187,35.0,Shooting,473
+1188,35.0,Short Track Speed Skating,1
+1189,35.0,Skeleton,9
+1190,35.0,Ski Jumping,8
+1191,35.0,Snowboarding,13
+1192,35.0,Softball,9
+1193,35.0,Speed Skating,36
+1194,35.0,Swimming,16
+1195,35.0,Table Tennis,49
+1196,35.0,Taekwondo,2
+1197,35.0,Tennis,32
+1198,35.0,Trampolining,1
+1199,35.0,Triathlon,13
+1200,35.0,Tug-Of-War,1
+1201,35.0,Volleyball,25
+1202,35.0,Water Polo,32
+1203,35.0,Weightlifting,36
+1204,35.0,Wrestling,67
+1205,36.0,Alpine Skiing,17
+1206,36.0,Archery,52
+1207,36.0,Art Competitions,45
+1208,36.0,Athletics,258
+1209,36.0,Badminton,4
+1210,36.0,Baseball,9
+1211,36.0,Basketball,30
+1212,36.0,Beach Volleyball,17
+1213,36.0,Biathlon,52
+1214,36.0,Bobsleigh,79
+1215,36.0,Boxing,6
+1216,36.0,Canoeing,55
+1217,36.0,Cross Country Skiing,76
+1218,36.0,Curling,14
+1219,36.0,Cycling,55
+1220,36.0,Diving,6
+1221,36.0,Equestrianism,274
+1222,36.0,Fencing,227
+1223,36.0,Figure Skating,6
+1224,36.0,Football,9
+1225,36.0,Freestyle Skiing,6
+1226,36.0,Golf,5
+1227,36.0,Gymnastics,116
+1228,36.0,Handball,37
+1229,36.0,Hockey,30
+1230,36.0,Ice Hockey,41
+1231,36.0,Judo,12
+1232,36.0,Lacrosse,1
+1233,36.0,Luge,21
+1234,36.0,Modern Pentathlon,11
+1235,36.0,Nordic Combined,10
+1236,36.0,Polo,2
+1237,36.0,Rowing,57
+1238,36.0,Rugby,1
+1239,36.0,Rugby Sevens,1
+1240,36.0,Sailing,184
+1241,36.0,Shooting,416
+1242,36.0,Skeleton,4
+1243,36.0,Ski Jumping,5
+1244,36.0,Snowboarding,6
+1245,36.0,Softball,4
+1246,36.0,Speed Skating,11
+1247,36.0,Swimming,14
+1248,36.0,Synchronized Swimming,1
+1249,36.0,Table Tennis,27
+1250,36.0,Taekwondo,2
+1251,36.0,Tennis,43
+1252,36.0,Triathlon,9
+1253,36.0,Tug-Of-War,4
+1254,36.0,Volleyball,20
+1255,36.0,Water Polo,30
+1256,36.0,Weightlifting,30
+1257,36.0,Wrestling,51
+1258,37.0,Alpine Skiing,2
+1259,37.0,Alpinism,1
+1260,37.0,Archery,38
+1261,37.0,Art Competitions,112
+1262,37.0,Athletics,182
+1263,37.0,Badminton,5
+1264,37.0,Baseball,11
+1265,37.0,Basketball,8
+1266,37.0,Beach Volleyball,8
+1267,37.0,Biathlon,19
+1268,37.0,Bobsleigh,53
+1269,37.0,Boxing,2
+1270,37.0,Canoeing,30
+1271,37.0,Cross Country Skiing,57
+1272,37.0,Curling,16
+1273,37.0,Cycling,56
+1274,37.0,Diving,4
+1275,37.0,Equestrianism,231
+1276,37.0,Fencing,187
+1277,37.0,Figure Skating,3
+1278,37.0,Football,2
+1279,37.0,Freestyle Skiing,6
+1280,37.0,Golf,11
+1281,37.0,Gymnastics,62
+1282,37.0,Handball,16
+1283,37.0,Hockey,18
+1284,37.0,Ice Hockey,37
+1285,37.0,Judo,7
+1286,37.0,Lacrosse,1
+1287,37.0,Luge,4
+1288,37.0,Modern Pentathlon,6
+1289,37.0,Nordic Combined,5
+1290,37.0,Polo,6
+1291,37.0,Roque,1
+1292,37.0,Rowing,49
+1293,37.0,Sailing,139
+1294,37.0,Shooting,372
+1295,37.0,Skeleton,6
+1296,37.0,Ski Jumping,8
+1297,37.0,Snowboarding,6
+1298,37.0,Softball,4
+1299,37.0,Speed Skating,18
+1300,37.0,Swimming,5
+1301,37.0,Table Tennis,25
+1302,37.0,Taekwondo,1
+1303,37.0,Tennis,29
+1304,37.0,Triathlon,6
+1305,37.0,Tug-Of-War,4
+1306,37.0,Volleyball,7
+1307,37.0,Water Polo,21
+1308,37.0,Weightlifting,16
+1309,37.0,Wrestling,30
+1310,38.0,Alpine Skiing,3
+1311,38.0,Archery,42
+1312,38.0,Art Competitions,72
+1313,38.0,Athletics,137
+1314,38.0,Badminton,2
+1315,38.0,Baseball,4
+1316,38.0,Basketball,3
+1317,38.0,Beach Volleyball,6
+1318,38.0,Biathlon,42
+1319,38.0,Bobsleigh,46
+1320,38.0,Boxing,2
+1321,38.0,Canoeing,20
+1322,38.0,Cross Country Skiing,30
+1323,38.0,Curling,20
+1324,38.0,Cycling,33
+1325,38.0,Diving,2
+1326,38.0,Equestrianism,203
+1327,38.0,Fencing,172
+1328,38.0,Figure Skating,7
+1329,38.0,Football,5
+1330,38.0,Golf,7
+1331,38.0,Gymnastics,72
+1332,38.0,Handball,13
+1333,38.0,Hockey,10
+1334,38.0,Ice Hockey,18
+1335,38.0,Judo,6
+1336,38.0,Luge,6
+1337,38.0,Modern Pentathlon,5
+1338,38.0,Polo,6
+1339,38.0,Rowing,33
+1340,38.0,Sailing,122
+1341,38.0,Shooting,343
+1342,38.0,Skeleton,7
+1343,38.0,Ski Jumping,2
+1344,38.0,Snowboarding,2
+1345,38.0,Softball,4
+1346,38.0,Speed Skating,11
+1347,38.0,Swimming,4
+1348,38.0,Table Tennis,17
+1349,38.0,Tennis,12
+1350,38.0,Trampolining,1
+1351,38.0,Triathlon,2
+1352,38.0,Tug-Of-War,5
+1353,38.0,Volleyball,8
+1354,38.0,Water Polo,12
+1355,38.0,Weightlifting,15
+1356,38.0,Wrestling,18
+1357,39.0,Alpine Skiing,8
+1358,39.0,Alpinism,1
+1359,39.0,Archery,30
+1360,39.0,Art Competitions,95
+1361,39.0,Athletics,84
+1362,39.0,Baseball,3
+1363,39.0,Basketball,3
+1364,39.0,Beach Volleyball,6
+1365,39.0,Biathlon,19
+1366,39.0,Bobsleigh,59
+1367,39.0,Canoeing,11
+1368,39.0,Croquet,2
+1369,39.0,Cross Country Skiing,15
+1370,39.0,Curling,17
+1371,39.0,Cycling,35
+1372,39.0,Diving,1
+1373,39.0,Equestrianism,184
+1374,39.0,Fencing,163
+1375,39.0,Figure Skating,6
+1376,39.0,Football,2
+1377,39.0,Freestyle Skiing,1
+1378,39.0,Golf,4
+1379,39.0,Gymnastics,23
+1380,39.0,Handball,10
+1381,39.0,Hockey,4
+1382,39.0,Ice Hockey,9
+1383,39.0,Jeu De Paume,1
+1384,39.0,Judo,3
+1385,39.0,Luge,3
+1386,39.0,Modern Pentathlon,1
+1387,39.0,Nordic Combined,1
+1388,39.0,Polo,5
+1389,39.0,Rowing,22
+1390,39.0,Rugby,1
+1391,39.0,Sailing,112
+1392,39.0,Shooting,383
+1393,39.0,Skeleton,3
+1394,39.0,Ski Jumping,1
+1395,39.0,Softball,1
+1396,39.0,Speed Skating,8
+1397,39.0,Swimming,1
+1398,39.0,Synchronized Swimming,1
+1399,39.0,Table Tennis,17
+1400,39.0,Tennis,17
+1401,39.0,Trampolining,1
+1402,39.0,Volleyball,2
+1403,39.0,Water Polo,7
+1404,39.0,Weightlifting,5
+1405,39.0,Wrestling,14
+1406,40.0,Alpine Skiing,3
+1407,40.0,Archery,31
+1408,40.0,Art Competitions,71
+1409,40.0,Athletics,72
+1410,40.0,Badminton,2
+1411,40.0,Baseball,1
+1412,40.0,Basketball,1
+1413,40.0,Beach Volleyball,3
+1414,40.0,Biathlon,11
+1415,40.0,Bobsleigh,24
+1416,40.0,Canoeing,14
+1417,40.0,Cricket,1
+1418,40.0,Cross Country Skiing,14
+1419,40.0,Curling,6
+1420,40.0,Cycling,10
+1421,40.0,Diving,1
+1422,40.0,Equestrianism,226
+1423,40.0,Fencing,120
+1424,40.0,Figure Skating,1
+1425,40.0,Football,2
+1426,40.0,Freestyle Skiing,4
+1427,40.0,Golf,3
+1428,40.0,Gymnastics,25
+1429,40.0,Handball,3
+1430,40.0,Hockey,5
+1431,40.0,Ice Hockey,9
+1432,40.0,Judo,2
+1433,40.0,Luge,7
+1434,40.0,Modern Pentathlon,5
+1435,40.0,Motorboating,2
+1436,40.0,Polo,4
+1437,40.0,Rowing,20
+1438,40.0,Sailing,124
+1439,40.0,Shooting,312
+1440,40.0,Skeleton,1
+1441,40.0,Ski Jumping,1
+1442,40.0,Snowboarding,2
+1443,40.0,Speed Skating,5
+1444,40.0,Swimming,3
+1445,40.0,Synchronized Swimming,1
+1446,40.0,Table Tennis,10
+1447,40.0,Tennis,18
+1448,40.0,Triathlon,2
+1449,40.0,Tug-Of-War,4
+1450,40.0,Volleyball,2
+1451,40.0,Water Polo,3
+1452,40.0,Weightlifting,12
+1453,40.0,Wrestling,7
+1454,41.0,Alpine Skiing,4
+1455,41.0,Alpinism,1
+1456,41.0,Archery,24
+1457,41.0,Art Competitions,92
+1458,41.0,Athletics,35
+1459,41.0,Baseball,2
+1460,41.0,Beach Volleyball,1
+1461,41.0,Biathlon,2
+1462,41.0,Bobsleigh,19
+1463,41.0,Boxing,1
+1464,41.0,Canoeing,4
+1465,41.0,Cross Country Skiing,9
+1466,41.0,Curling,8
+1467,41.0,Cycling,6
+1468,41.0,Equestrianism,167
+1469,41.0,Fencing,97
+1470,41.0,Figure Skating,3
+1471,41.0,Golf,6
+1472,41.0,Gymnastics,12
+1473,41.0,Hockey,5
+1474,41.0,Ice Hockey,8
+1475,41.0,Polo,3
+1476,41.0,Rowing,12
+1477,41.0,Sailing,82
+1478,41.0,Shooting,304
+1479,41.0,Skeleton,5
+1480,41.0,Ski Jumping,3
+1481,41.0,Softball,3
+1482,41.0,Speed Skating,4
+1483,41.0,Swimming,4
+1484,41.0,Table Tennis,10
+1485,41.0,Tennis,1
+1486,41.0,Tug-Of-War,2
+1487,41.0,Volleyball,3
+1488,41.0,Water Polo,4
+1489,41.0,Weightlifting,2
+1490,41.0,Wrestling,5
+1491,42.0,Archery,23
+1492,42.0,Art Competitions,114
+1493,42.0,Athletics,29
+1494,42.0,Biathlon,2
+1495,42.0,Bobsleigh,16
+1496,42.0,Canoeing,6
+1497,42.0,Curling,9
+1498,42.0,Cycling,5
+1499,42.0,Diving,1
+1500,42.0,Equestrianism,147
+1501,42.0,Fencing,125
+1502,42.0,Figure Skating,3
+1503,42.0,Freestyle Skiing,1
+1504,42.0,Golf,5
+1505,42.0,Gymnastics,17
+1506,42.0,Handball,2
+1507,42.0,Hockey,1
+1508,42.0,Ice Hockey,2
+1509,42.0,Jeu De Paume,2
+1510,42.0,Judo,2
+1511,42.0,Luge,2
+1512,42.0,Polo,1
+1513,42.0,Rowing,7
+1514,42.0,Sailing,80
+1515,42.0,Shooting,241
+1516,42.0,Speed Skating,2
+1517,42.0,Table Tennis,8
+1518,42.0,Tennis,6
+1519,42.0,Triathlon,1
+1520,42.0,Tug-Of-War,2
+1521,42.0,Water Polo,2
+1522,42.0,Weightlifting,1
+1523,42.0,Wrestling,1
+1524,43.0,Alpine Skiing,1
+1525,43.0,Alpinism,1
+1526,43.0,Archery,21
+1527,43.0,Art Competitions,91
+1528,43.0,Athletics,14
+1529,43.0,Bobsleigh,14
+1530,43.0,Canoeing,7
+1531,43.0,Cross Country Skiing,7
+1532,43.0,Curling,8
+1533,43.0,Cycling,5
+1534,43.0,Equestrianism,154
+1535,43.0,Fencing,83
+1536,43.0,Figure Skating,1
+1537,43.0,Freestyle Skiing,1
+1538,43.0,Golf,3
+1539,43.0,Gymnastics,7
+1540,43.0,Handball,1
+1541,43.0,Hockey,2
+1542,43.0,Ice Hockey,1
+1543,43.0,Jeu De Paume,1
+1544,43.0,Judo,1
+1545,43.0,Luge,2
+1546,43.0,Modern Pentathlon,1
+1547,43.0,Polo,3
+1548,43.0,Rowing,2
+1549,43.0,Sailing,71
+1550,43.0,Shooting,266
+1551,43.0,Ski Jumping,1
+1552,43.0,Table Tennis,10
+1553,43.0,Tennis,7
+1554,43.0,Tug-Of-War,1
+1555,43.0,Weightlifting,5
+1556,44.0,Archery,26
+1557,44.0,Art Competitions,85
+1558,44.0,Athletics,14
+1559,44.0,Badminton,2
+1560,44.0,Baseball,1
+1561,44.0,Bobsleigh,9
+1562,44.0,Canoeing,2
+1563,44.0,Cricket,1
+1564,44.0,Cross Country Skiing,1
+1565,44.0,Curling,8
+1566,44.0,Cycling,1
+1567,44.0,Diving,1
+1568,44.0,Equestrianism,139
+1569,44.0,Fencing,66
+1570,44.0,Figure Skating,3
+1571,44.0,Freestyle Skiing,1
+1572,44.0,Golf,3
+1573,44.0,Gymnastics,8
+1574,44.0,Hockey,2
+1575,44.0,Ice Hockey,1
+1576,44.0,Luge,1
+1577,44.0,Polo,4
+1578,44.0,Rowing,6
+1579,44.0,Sailing,85
+1580,44.0,Shooting,202
+1581,44.0,Skeleton,1
+1582,44.0,Table Tennis,2
+1583,44.0,Tennis,7
+1584,44.0,Weightlifting,1
+1585,45.0,Alpine Skiing,3
+1586,45.0,Archery,9
+1587,45.0,Art Competitions,127
+1588,45.0,Athletics,5
+1589,45.0,Biathlon,2
+1590,45.0,Bobsleigh,6
+1591,45.0,Canoeing,1
+1592,45.0,Cross Country Skiing,2
+1593,45.0,Curling,6
+1594,45.0,Cycling,2
+1595,45.0,Equestrianism,132
+1596,45.0,Fencing,58
+1597,45.0,Figure Skating,1
+1598,45.0,Golf,3
+1599,45.0,Gymnastics,2
+1600,45.0,Racquets,2
+1601,45.0,Rowing,4
+1602,45.0,Sailing,41
+1603,45.0,Shooting,171
+1604,45.0,Skeleton,1
+1605,45.0,Table Tennis,2
+1606,45.0,Tennis,1
+1607,45.0,Tug-Of-War,1
+1608,45.0,Water Polo,1
+1609,45.0,Weightlifting,1
+1610,46.0,Archery,12
+1611,46.0,Art Competitions,73
+1612,46.0,Athletics,8
+1613,46.0,Bobsleigh,13
+1614,46.0,Canoeing,1
+1615,46.0,Croquet,2
+1616,46.0,Curling,3
+1617,46.0,Equestrianism,89
+1618,46.0,Fencing,23
+1619,46.0,Figure Skating,4
+1620,46.0,Golf,2
+1621,46.0,Ice Hockey,2
+1622,46.0,Motorboating,1
+1623,46.0,Polo,1
+1624,46.0,Rowing,3
+1625,46.0,Sailing,40
+1626,46.0,Shooting,144
+1627,46.0,Speed Skating,4
+1628,46.0,Swimming,1
+1629,46.0,Table Tennis,3
+1630,47.0,Alpinism,1
+1631,47.0,Archery,8
+1632,47.0,Art Competitions,89
+1633,47.0,Athletics,2
+1634,47.0,Bobsleigh,5
+1635,47.0,Canoeing,3
+1636,47.0,Cross Country Skiing,2
+1637,47.0,Curling,2
+1638,47.0,Equestrianism,98
+1639,47.0,Fencing,22
+1640,47.0,Golf,2
+1641,47.0,Luge,1
+1642,47.0,Polo,1
+1643,47.0,Rowing,1
+1644,47.0,Sailing,42
+1645,47.0,Shooting,126
+1646,47.0,Skeleton,2
+1647,47.0,Tennis,1
+1648,48.0,Archery,11
+1649,48.0,Art Competitions,100
+1650,48.0,Athletics,5
+1651,48.0,Bobsleigh,5
+1652,48.0,Canoeing,2
+1653,48.0,Curling,3
+1654,48.0,Diving,1
+1655,48.0,Equestrianism,80
+1656,48.0,Fencing,29
+1657,48.0,Golf,1
+1658,48.0,Ice Hockey,1
+1659,48.0,Luge,2
+1660,48.0,Polo,3
+1661,48.0,Rowing,2
+1662,48.0,Sailing,34
+1663,48.0,Shooting,128
+1664,49.0,Alpinism,3
+1665,49.0,Archery,1
+1666,49.0,Art Competitions,113
+1667,49.0,Athletics,1
+1668,49.0,Bobsleigh,8
+1669,49.0,Cross Country Skiing,1
+1670,49.0,Curling,3
+1671,49.0,Cycling,2
+1672,49.0,Equestrianism,79
+1673,49.0,Fencing,24
+1674,49.0,Gymnastics,1
+1675,49.0,Sailing,30
+1676,49.0,Shooting,94
+1677,49.0,Skeleton,1
+1678,49.0,Table Tennis,1
+1679,50.0,Archery,7
+1680,50.0,Art Competitions,85
+1681,50.0,Athletics,1
+1682,50.0,Bobsleigh,1
+1683,50.0,Curling,2
+1684,50.0,Equestrianism,52
+1685,50.0,Fencing,9
+1686,50.0,Golf,3
+1687,50.0,Rowing,1
+1688,50.0,Sailing,31
+1689,50.0,Shooting,84
+1690,50.0,Table Tennis,1
+1691,50.0,Wrestling,1
+1692,51.0,Alpine Skiing,2
+1693,51.0,Archery,2
+1694,51.0,Art Competitions,55
+1695,51.0,Bobsleigh,1
+1696,51.0,Diving,1
+1697,51.0,Equestrianism,36
+1698,51.0,Fencing,12
+1699,51.0,Rowing,3
+1700,51.0,Sailing,20
+1701,51.0,Shooting,66
+1702,51.0,Skeleton,1
+1703,52.0,Archery,5
+1704,52.0,Art Competitions,77
+1705,52.0,Athletics,1
+1706,52.0,Bobsleigh,1
+1707,52.0,Curling,1
+1708,52.0,Equestrianism,49
+1709,52.0,Fencing,6
+1710,52.0,Figure Skating,1
+1711,52.0,Luge,1
+1712,52.0,Polo,1
+1713,52.0,Rowing,1
+1714,52.0,Sailing,21
+1715,52.0,Shooting,77
+1716,52.0,Speed Skating,2
+1717,53.0,Archery,6
+1718,53.0,Art Competitions,93
+1719,53.0,Bobsleigh,2
+1720,53.0,Equestrianism,38
+1721,53.0,Fencing,7
+1722,53.0,Luge,1
+1723,53.0,Modern Pentathlon,1
+1724,53.0,Polo,1
+1725,53.0,Sailing,14
+1726,53.0,Shooting,35
+1727,53.0,Skeleton,1
+1728,53.0,Table Tennis,1
+1729,54.0,Archery,13
+1730,54.0,Art Competitions,54
+1731,54.0,Bobsleigh,1
+1732,54.0,Curling,1
+1733,54.0,Equestrianism,25
+1734,54.0,Fencing,4
+1735,54.0,Motorboating,1
+1736,54.0,Sailing,16
+1737,54.0,Shooting,46
+1738,54.0,Table Tennis,1
+1739,55.0,Alpine Skiing,1
+1740,55.0,Archery,5
+1741,55.0,Art Competitions,53
+1742,55.0,Equestrianism,10
+1743,55.0,Fencing,1
+1744,55.0,Sailing,14
+1745,55.0,Shooting,20
+1746,56.0,Archery,5
+1747,56.0,Art Competitions,53
+1748,56.0,Equestrianism,19
+1749,56.0,Rowing,3
+1750,56.0,Sailing,14
+1751,56.0,Shooting,37
+1752,57.0,Alpinism,1
+1753,57.0,Archery,4
+1754,57.0,Art Competitions,23
+1755,57.0,Equestrianism,12
+1756,57.0,Fencing,4
+1757,57.0,Sailing,2
+1758,57.0,Shooting,23
+1759,58.0,Archery,3
+1760,58.0,Art Competitions,50
+1761,58.0,Croquet,2
+1762,58.0,Curling,1
+1763,58.0,Equestrianism,15
+1764,58.0,Rowing,1
+1765,58.0,Sailing,6
+1766,58.0,Shooting,6
+1767,59.0,Archery,4
+1768,59.0,Art Competitions,53
+1769,59.0,Equestrianism,2
+1770,59.0,Fencing,3
+1771,59.0,Roque,1
+1772,59.0,Sailing,11
+1773,59.0,Shooting,13
+1774,60.0,Art Competitions,45
+1775,60.0,Equestrianism,10
+1776,60.0,Rowing,1
+1777,60.0,Sailing,10
+1778,60.0,Shooting,22
+1779,61.0,Archery,5
+1780,61.0,Art Competitions,42
+1781,61.0,Equestrianism,9
+1782,61.0,Fencing,2
+1783,61.0,Sailing,4
+1784,61.0,Shooting,6
+1785,62.0,Archery,1
+1786,62.0,Art Competitions,48
+1787,62.0,Equestrianism,2
+1788,62.0,Sailing,5
+1789,62.0,Shooting,6
+1790,63.0,Archery,8
+1791,63.0,Art Competitions,37
+1792,63.0,Equestrianism,6
+1793,63.0,Fencing,1
+1794,63.0,Shooting,4
+1795,64.0,Art Competitions,23
+1796,64.0,Roque,1
+1797,64.0,Shooting,6
+1798,65.0,Art Competitions,76
+1799,65.0,Equestrianism,3
+1800,65.0,Shooting,5
+1801,66.0,Archery,1
+1802,66.0,Art Competitions,24
+1803,66.0,Equestrianism,2
+1804,66.0,Sailing,1
+1805,66.0,Shooting,3
+1806,67.0,Art Competitions,22
+1807,67.0,Equestrianism,3
+1808,68.0,Archery,2
+1809,68.0,Art Competitions,22
+1810,68.0,Shooting,1
+1811,69.0,Art Competitions,57
+1812,69.0,Equestrianism,3
+1813,70.0,Art Competitions,25
+1814,70.0,Sailing,2
+1815,70.0,Shooting,1
+1816,71.0,Archery,2
+1817,71.0,Art Competitions,24
+1818,71.0,Equestrianism,1
+1819,71.0,Sailing,6
+1820,72.0,Art Competitions,19
+1821,72.0,Equestrianism,2
+1822,72.0,Shooting,3
+1823,73.0,Art Competitions,8
+1824,74.0,Art Competitions,12
+1825,75.0,Art Competitions,4
+1826,76.0,Art Competitions,7
+1827,77.0,Art Competitions,2
+1828,80.0,Art Competitions,3
+1829,81.0,Art Competitions,2
+1830,84.0,Art Competitions,1
+1831,88.0,Art Competitions,3
+1832,96.0,Art Competitions,1
+1833,97.0,Art Competitions,1
