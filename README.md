@@ -7,8 +7,16 @@ Before running, please make sure that the following packages are installed:
 
   ffmpeg
 
-     Download ffmpeg from https://www.ffmpeg.org/download.html into a folder named ffmpeg. Install it. And add it to the environment            path of your computer.
+     Download ffmpeg from https://www.ffmpeg.org/download.html into a folder named ffmpeg. 
+     
+     Install it. And add it to the environment path of your computer.
+     
+     Make sure to run "animation.FFMpegWriter.isAvailable()" in the first section of Background info.ipynb.
+     
+     If it is true, then ffmpeg is installed succesfully.
   
   os, pandas, matplotlib, numpy, seaborn
 
      For windows users, use pip install XXX command.
+ 
+
