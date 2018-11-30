@@ -38,7 +38,7 @@ class OlympicMedalGif:
         self.df_2018_winter = pd.read_csv('./olympic-games/winter_2018.csv')
         self.years_summer = list(dict(self.df_summer.groupby(self.df_summer['Year']).size()).keys()) + [2016]
         self.years_winter = list(dict(self.df_winter.groupby(self.df_winter['Year']).size()).keys()) + [2018]
-        self.conv = pd.read_csv('country_code_convert.csv')
+        self.conv = pd.read_csv('country_code_convert.csv')  # To convert country codes between ISO and NOC.
 
     def summer_gif(self):
         """
@@ -48,18 +48,23 @@ class OlympicMedalGif:
         :return: None
         """
         assert self.start_year <= 2016, 'For summer Olympics starting year cannot be larger than 2016.'
+        # Create a directory that store the figures and gif.
         os.mkdir('./medal_figures_summer')
         years = [i for i in self.years_summer if (i>=self.start_year) and (i<=self.end_year)]
+        # Setup the colormap
         cmap = sns.cubehelix_palette(n_colors=6, start=1, rot=0.1, hue=2, dark=0.3, light=1, as_cmap=True)
+        # Important keywords for cartopy.
         shapename = 'admin_0_countries'
         countries_shp = shpreader.natural_earth(resolution='110m', category='cultural', name=shapename)
         filenames = []
+        # Loop in the indicated years.
         for i in years:
             fig = plt.figure(figsize=(10, 8))
             ax = fig.add_subplot(1, 1, 1, projection=ccrs.Mercator())
             ax.set_extent([-169.95, 169.95, -65, 80], crs=ccrs.PlateCarree())
             ax.add_feature(cfeature.BORDERS)
             ax.coastlines(resolution='110m')
+            # Add titles for specific years.
             if i == 1936:
                 fig.suptitle('The Nazi Olympics', y=0.9, fontsize=14, fontweight='bold')
             elif i == 1980:
@@ -125,6 +130,7 @@ class OlympicMedalGif:
             plt.close(fig)
 
         images = []
+        # Create the gif.
         for filename in filenames:
             images.append(imageio.imread(filename))
         imageio.mimsave('./medal_figures_summer/movie.gif', images, duration=self.duration)
@@ -137,21 +143,27 @@ class OlympicMedalGif:
         Most resent year is 2018.
         :return: None.
         """
+        # Create the directory.
         os.mkdir('./medal_figures_winter')
         start = self.start_year
         end = self.end_year
         duration = self.duration
+        # Specify the years.
         years = [i for i in self.years_winter if (i >= start) and (i <= end)]
+        # Setup the colormap.
         cmap = sns.cubehelix_palette(n_colors=6, start=2.5, rot=0.1, hue=2, dark=0.3, light=1, as_cmap=True)
+        # Important variable and keywords to initialize cartopy.
         shapename = 'admin_0_countries'
         countries_shp = shpreader.natural_earth(resolution='110m', category='cultural', name=shapename)
         filenames = []
+        # Loop in the specific years.
         for i in years:
             fig = plt.figure(figsize=(10, 8))
             ax = fig.add_subplot(1, 1, 1, projection=ccrs.Mercator())
             ax.set_extent([-169.95, 169.95, -65, 80], crs=ccrs.PlateCarree())
             ax.add_feature(cfeature.BORDERS)
             ax.coastlines(resolution='110m')
+            # Add some titles for specific years.
             if i == 1924:
                 fig.suptitle('The First Winter Olympics.', y=0.9, fontsize=14, fontweight='bold')
             if i == 1994:
@@ -206,6 +218,7 @@ class OlympicMedalGif:
             plt.savefig(fname=fname, format='png')
             plt.close(fig)
         images = []
+        # Create the gif.
         for filename in filenames:
             images.append(imageio.imread(filename))
         imageio.mimsave('./medal_figures_winter/movie.gif', images, duration=duration)
@@ -235,6 +248,7 @@ class TopNCountry:
         in the directory ./medal_figures_summer as png format.
         :return: None
         """
+        # Create top n countries data from 1996 to 2014
         df_summer = self.df_summer[self.df_summer['Year'] >= 1996]
         m = list(df_summer['Country'].value_counts()[:self.n_top].index)
         df_top = df_summer[df_summer['Country'].isin(m)].groupby(['Country', 'Medal']).size()
@@ -242,6 +256,7 @@ class TopNCountry:
         df_top = df_top.reindex(new_index)
         unstacked_df_top = df_top.unstack().reindex(m, columns=['Gold', 'Silver', 'Bronze'])
         k = []
+        # Create the dataframe in 2016.
         for j in self.df_2016_summer['NOC'].tolist():
             n = j[j.find('(') + 1:j.find(')')]
             k.append((n, j))
@@ -252,6 +267,7 @@ class TopNCountry:
             summer_2016 = pd.concat([summer_2016, df_tmp])
         summer_2016['Country'] = m
         new_summer_2016 = summer_2016.set_index(['Country'])[['Gold', 'Silver', 'Bronze']]
+        # Add the two dataframes and plot
         unstacked_df_top.add(new_summer_2016).reindex(m[::-1], columns=['Bronze', 'Silver', 'Gold']).plot(kind='barh')
         plt.title('Medal Result of Summer Olympics since 1996')
         fname = './medal_figures_summer/summer_bar_chart.png'
@@ -264,12 +280,14 @@ class TopNCountry:
         in the directory ./medal_figures_winter as png format.
         :return: None
         """
+        # Create the top n countries dataframe from 1994 to 2016
         df_winter = self.df_winter[self.df_winter['Year'] >= 1994]
         m = list(df_winter['Country'].value_counts()[:self.n_top].index)
         df_top = df_winter[df_winter['Country'].isin(m)].groupby(['Country', 'Medal']).size()
         new_index = pd.MultiIndex.from_product([m, ['Gold', 'Silver', 'Bronze']], names=df_top.index.names)
         df_top = df_top.reindex(new_index)
         unstacked_df_top = df_top.unstack().reindex(m, columns=['Gold', 'Silver', 'Bronze'])
+        # Create the dataframe in 2018
         k = []
         for j in self.df_2018_winter['NOC'].tolist():
             n = j[j.find('(') + 1:j.find(')')]
@@ -284,6 +302,7 @@ class TopNCountry:
             winter_2018 = pd.concat([winter_2018, df_tmp])
         winter_2018['Country'] = m
         new_winter_2018 = winter_2018.set_index(['Country'])[['Gold', 'Silver', 'Bronze']]
+        # Add two dataframes and plot.
         unstacked_df_top.add(new_winter_2018).reindex(m[::-1], columns=['Bronze', 'Silver', 'Gold']).plot(kind='barh')
         plt.title('Medal Result of Winter Olympics since 1994')
         fname = './medal_figures_winter/winter_bar_chart.png'
