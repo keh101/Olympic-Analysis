@@ -7,8 +7,8 @@ Before running, please make sure that the following packages are installed:
 
   ffmpeg
 
-     ```download ffmpeg from https://www.ffmpeg.org/download.html into a folder named ffmpeg. Install it. And add it to the environment             path of your computer.```
+     `download ffmpeg from https://www.ffmpeg.org/download.html into a folder named ffmpeg. Install it. And add it to the environment             path of your computer.
   
   os, pandas, matplotlib, numpy, seaborn
 
-     ```For windows users, use pip install XXX command.```
+     `For windows users, use pip install XXX command.
