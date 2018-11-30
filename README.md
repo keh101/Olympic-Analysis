@@ -4,7 +4,9 @@ File 'medal_gif.py' is a Python file that can generate gifs for winter Olympic G
 
 # How to run Background info.ipynb
 Before running, please make sure that the following packages are installed:
+
 ffmpeg
   ```download ffmpeg from https://www.ffmpeg.org/download.html into a folder named ffmpeg. Install it. And add it to the environment path         of your computer.```
+  
 os, pandas, matplotlib, numpy, seaborn
    ```For windows users, use pip install XXX command.```
