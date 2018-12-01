@@ -15,7 +15,7 @@ Before running, please make sure that the following packages are installed:
      
      Make sure to run "animation.FFMpegWriter.isAvailable()" in the first section of Background info.ipynb.
      
-     If it is True, then ffmpeg is installed succesfully.
+     If it is True, then ffmpeg is installed successfully.
   
   os, pandas, matplotlib, numpy, seaborn
 
