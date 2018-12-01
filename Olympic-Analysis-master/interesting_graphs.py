@@ -12,10 +12,10 @@ import matplotlib.pyplot as plt
 
 
 def graph_NOC_counts(path):
-    with open(r'%s\Olympic-Analysis-master\Olympic-Analysis-master\120-years-of-olympic-history-athletes-and-results\noc.csv'%path, 'r') as g:
+    with open(r'\Olympic-Analysis-master\Olympic-Analysis-master\120-years-of-olympic-history-athletes-and-results\noc.csv', 'r') as g:
         reader = csv.reader(g)
         listofnocs = list(reader)
-    df_to = pd.read_csv(r"%s/Olympic-Analysis-master/AnalyzedData/NOC_Sport_Year.csv"%path)
+    df_to = pd.read_csv(r"/Olympic-Analysis-master/AnalyzedData/NOC_Sport_Year.csv")
     multiindex = df_to.set_index(['Year','NOC','Sport'])
     new_multi = multiindex.drop(['Unnamed: 0'], axis =1)
     sport_noc_list = ['Ski Jumping', 'Athletics', 'Biathlon']
@@ -27,29 +27,39 @@ def graph_NOC_counts(path):
                 countryplot = country_ski.plot()
                 countryplot.set_title('%s Ski Jumping'%countries[0])
             
-def graph_weight_counts(path):
-    df_to = pd.read_csv(r"%s/Olympic-Analysis-master/AnalyzedData/Weight_Sport_Year.csv"%path)
+def graph_weight_counts():
+    df_to = pd.read_csv(r"/Olympic-Analysis-master/AnalyzedData/Weight_Sport_Year.csv")
     multiindex = df_to.set_index(['Year','Weight','Sport'])
     new_multi = multiindex.drop(['Unnamed: 0'], axis =1)
     weight_sport_list = ['Archery','Athletics','Biathlon','Beach Volleyball','Canoeing','Cycling','Snowboarding','Softball','Sailing']    
     
     for sports in weight_sport_list:
+        print(sports)
         sport_multi = new_multi.xs('%s'%sports, level=2)
+        print(sport_multi.head(n=5))
+        print(1)
         sport_weight= sport_multi.reset_index(level='Weight')
         sport_weight['Total']=sport_weight['Weight']*sport_weight['count']
-        
+        print(sport_weight.head(n=5))
+        print(1)
         totals_sum = sport_weight.groupby(level=0)['Total'].sum()
+        print(totals_sum.head(n=5))
+        print(1)
         counts_sum = sport_weight.groupby(level=0)['count'].sum()
+        print(counts_sum.head(n=5))
+        print(1)
         averages = totals_sum/counts_sum
+        print(averages)
+        print(1)
         plt.figure()
         average_plot = averages.plot()
         average_plot.set_title('%s Average Weight Over Time'%sports)
         average_plot.set_ylabel('Weight')
-        average_plot.get_figure().savefig(r'%s\Olympic-Analysis-master\AnalyzedData\Weight\Average\%s_Average.png' %(path,sports))
+        average_plot.get_figure().savefig(r'\Olympic-Analysis-master\AnalyzedData\Weight\Average\%s_Average.png' %sports)
         
             
-def graph_age_counts(path):
-    df_to = pd.read_csv(r"%s/Olympic-Analysis-master/AnalyzedData/Age_Sport_Year.csv"%path)
+def graph_age_counts():
+    df_to = pd.read_csv(r"/Olympic-Analysis-master/AnalyzedData/Age_Sport_Year.csv")
     multiindex = df_to.set_index(['Year','Age','Sport'])
     new_multi = multiindex.drop(['Unnamed: 0'], axis =1)
     age_sport_list = ['Art Competitions','Athletics','Basketball', 'Biathlon', 
@@ -68,10 +78,9 @@ def graph_age_counts(path):
         average_plot = averages.plot()
         average_plot.set_title('%s Average Age Over Time'%sports)
         average_plot.set_ylabel('Age')
-        average_plot.get_figure().savefig(r'%s\Olympic-Analysis-master\AnalyzedData\Age\Average\%s_Average.png' %(path,sports))
+        average_plot.get_figure().savefig(r'\Olympic-Analysis-master\AnalyzedData\Age\Average\%s_Average.png' %sports)
 
-#input path to github repository
-graph_NOC_counts(r'C:\Users\nikhil\Desktop\ECE143 HW')       
-graph_age_counts(r'C:\Users\nikhil\Desktop\ECE143 HW')
-graph_weight_counts(r'C:\Users\nikhil\Desktop\ECE143 HW')  
+graph_NOC_counts()       
+graph_age_counts()
+graph_weight_counts()  
 
