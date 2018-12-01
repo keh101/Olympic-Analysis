@@ -7,11 +7,10 @@ import os
 Here we partitioned the data into relevant confounding variables we are hoping
 to analyze through chi square analysis
 """
-#put the path of where you downloaded the repository to
-path = r'C:/Users/nikhil/Desktop/ECE143 HW'
-df = pd.read_excel("%s/Olympic-Analysis-master/Olympic-Analysis-master/Statiscal Analysis/multiple variables.xlsx"%path)
+
+df = pd.read_excel("/Olympic-Analysis/Olympic-Analysis-master/Statiscal Analysis/multiple variables.xlsx")
 m=df
-os.chdir("%s/Olympic-Analysis-master/AnalyzedData"%path)
+os.chdir("/Olympic-Analysis-master/AnalyzedData")
 
 
 #get height vs. sport counts
@@ -31,7 +30,6 @@ df2 = hieghtvsportvyear.set_index('Year').T.reset_index(drop=True) \
 df2.columns = df2.columns.set_levels((df2.columns.levels[1] + 1).astype(str), level=1)
 df2.columns = df2.columns.to_series()
 
-df2
 df2.to_csv('split_height.csv')
 
 #get weight vs. sport counts
@@ -51,7 +49,6 @@ df2 = yearvweightvsport.set_index('Year').T.reset_index(drop=True) \
 df2.columns = df2.columns.set_levels((df2.columns.levels[1] + 1).astype(str), level=1)
 df2.columns = df2.columns.to_series()
 
-df2
 df2.to_csv('split_weight.csv')
 
 #get age vs. sport counts
@@ -71,7 +68,6 @@ df2 = yearvagevsport.set_index('Year').T.reset_index(drop=True) \
 df2.columns = df2.columns.set_levels((df2.columns.levels[1] + 1).astype(str), level=1)
 df2.columns = df2.columns.to_series()
 
-df2
 df2.to_csv('split_age.csv')
 
 
@@ -92,7 +88,6 @@ df2 = countryvsportvyear.set_index('Year').T.reset_index(drop=True) \
 df2.columns = df2.columns.set_levels((df2.columns.levels[1] + 1).astype(str), level=1)
 df2.columns = df2.columns.to_series()
 
-df2
 df2.to_csv('split_country.csv')
 
 
