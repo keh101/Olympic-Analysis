@@ -6,14 +6,12 @@ import pandas as pd
 import os
 import csv
 from scipy import stats
-from statsmodels.stats.multicomp import pairwise_tukeyhsd
 import numpy as np
 import statsmodels.api as sm
 import matplotlib.pyplot as plt
 params = {'legend.fontsize': 30, 'legend.handlelength': 3}
 plt.rcParams.update(params)
 
-from scipy import linalg
 from sklearn.decomposition import PCA
 from sklearn import preprocessing
 
@@ -65,7 +63,7 @@ def calculate_hp_trends(endog):
     print("Hodrick-Prescott (HP) filter calculated:\n")
     return {'hp_cycle':hp_cycle,'hp_trend':hp_trend}
 
-def graph_hp_trends(Sport,hp_cycle,hp_trend,variable_of_int,path):
+def graph_hp_trends(Sport,hp_cycle,hp_trend,variable_of_int):
     """
     Graphs HP trend arrays
     """
@@ -88,7 +86,7 @@ def graph_hp_trends(Sport,hp_cycle,hp_trend,variable_of_int,path):
         hp_trend_graph.set_ylabel('Tau(t)', fontsize =40)
         hp_trend_graph.get_legend().get_title().set_fontsize(30)
         fig1 = hp_trend_graph.get_figure()
-        fig1.savefig(r'%s\Olympic-Analysis\AnalyzedData\%s\Figures\%s_hptrends.png' %(path,variable_of_int,Sport))
+        fig1.savefig(r'\Olympic-Analysis\AnalyzedData\%s\Figures\%s_hptrends.png' %(variable_of_int,Sport))
     else:
         print('There were no trends in %s vs. %s'%(Sport,variable_of_int))
 
@@ -116,7 +114,7 @@ def calculate_PCA(prepared_data):
     labels =['PC' + str(x) for x in range(1,len(per_var)+1)]
     return{'pca':pca,'pca_data':pca_data,'per_var':per_var,'labels':labels}
 
-def plot_bar_PCA(per_var,labels,Sport,variable_of_int,path):
+def plot_bar_PCA(per_var,labels,Sport,variable_of_int):
     """
     Plots PCA bar graph data showing which PC's contribute to the most deviation
     """
@@ -125,10 +123,10 @@ def plot_bar_PCA(per_var,labels,Sport,variable_of_int,path):
     plt.ylabel('Percentage of Explained Variance')
     plt.xlabel('Principal Component')
     plt.title('Scree Plot')
-    plt.savefig(r'%s\Olympic-Analysis\AnalyzedData\%s\PCA\%s_PCA_Bar.png' %(path,variable_of_int,Sport))
+    plt.savefig(r'\Olympic-Analysis\AnalyzedData\%s\PCA\%s_PCA_Bar.png' %(variable_of_int,Sport))
     plt.show()
 
-def plot_scatter_PCA(pca_data,listof_indices,labels,per_var,Sport, variable_of_int,path):
+def plot_scatter_PCA(pca_data,listof_indices,labels,per_var,Sport, variable_of_int):
     """
     Plots a scatter plot of the PCA data for each Sport. Plots by year.
     """
@@ -143,9 +141,9 @@ def plot_scatter_PCA(pca_data,listof_indices,labels,per_var,Sport, variable_of_i
     for sample in pca_df.index:
         plt.annotate(sample,(pca_df.PC1.loc[sample],pca_df.PC2.loc[sample]))
     plt.show()
-    fig2.get_figure().savefig(r'%s\Olympic-Analysis\AnalyzedData\%s\PCA\%s_PCA_Scatter.png' %(path,variable_of_int,Sport))
+    fig2.get_figure().savefig(r'\Olympic-Analysis\AnalyzedData\%s\PCA\%s_PCA_Scatter.png' %(variable_of_int,Sport))
     
-def top_10_PCA(pca,listof_columns,Sport,variable_of_int,path):
+def top_10_PCA(pca,listof_columns,Sport,variable_of_int):
     """
     Returns and saves a list of the top 10 contributing factors causing deviations to a csv
     """
@@ -153,20 +151,20 @@ def top_10_PCA(pca,listof_columns,Sport,variable_of_int,path):
     loading_scores =pd.Series(pca.components_[0],index=listof_columns)
     sorted_loading_scores = loading_scores.abs().sort_values(ascending=False)
     top_10_years = sorted_loading_scores[0:10].index.values
-    loading_scores[top_10_years].to_csv(r'%s\Olympic-Analysis\AnalyzedData\%s\PCA\%s_top10_PCA.csv' %(path,variable_of_int,Sport))
+    loading_scores[top_10_years].to_csv(r'\Olympic-Analysis\AnalyzedData\%s\PCA\%s_top10_PCA.csv' %(variable_of_int,Sport))
     return loading_scores[top_10_years]
 
-def perform_trend_analysis(variable_of_int,path):
+def perform_trend_analysis(variable_of_int):
     """
     Calls HP filter functions
     """
     #read in sports as a list
-    os.chdir(r'%s\Olympic-Analysis\Olympic-Analysis-master\120-years-of-olympic-history-athletes-and-results'%path)
+    os.chdir(r'\Olympic-Analysis\Olympic-Analysis-master\120-years-of-olympic-history-athletes-and-results')
     with open('sports.csv', 'r') as f:
         reader = csv.reader(f)
         listofsports = list(reader)
     #read in data
-    df_to = pd.read_csv(r"%s/Olympic-Analysis/AnalyzedData/%s_Sport_Year.csv"%(path,variable_of_int))
+    df_to = pd.read_csv(r"/Olympic-Analysis/AnalyzedData/%s_Sport_Year.csv"%variable_of_int)
     multiindex = df_to.set_index(['Sport','Year',variable_of_int])
     print(multiindex)
     
@@ -177,24 +175,24 @@ def perform_trend_analysis(variable_of_int,path):
         try:    
             if dict_of_nan is not None:
                 hp_info = calculate_hp_trends(dict_of_nan['prepared_data'])
-                graph_hp_trends(sports[0],hp_info['hp_cycle'],hp_info['hp_trend'],variable_of_int,path)
+                graph_hp_trends(sports[0],hp_info['hp_cycle'],hp_info['hp_trend'],variable_of_int)
         except ValueError:
             print("the sport %s caused a value error, most liekly due to nonmatching shape of passed values"%sports)
         
         print('next_sport')
 
 
-def perform_PCA_analysis(variable_of_int,path):
+def perform_PCA_analysis(variable_of_int):
     """
     Calls PCA functions
     """
     #read in sports as a list
-    os.chdir(r'%s\Olympic-Analysis\Olympic-Analysis-master\120-years-of-olympic-history-athletes-and-results'%path)
+    os.chdir(r'\Olympic-Analysis\Olympic-Analysis-master\120-years-of-olympic-history-athletes-and-results')
     with open('sports.csv', 'r') as f:
         reader = csv.reader(f)
         listofsports = list(reader)
     #read in data
-    df_to = pd.read_csv(r"%s/Olympic-Analysis/AnalyzedData/%s_Sport_Year.csv"%(path,variable_of_int))
+    df_to = pd.read_csv(r"%s/Olympic-Analysis/AnalyzedData/%s_Sport_Year.csv"%variable_of_int)
     df_to = df_to.drop(['Unnamed: 0'], axis=1)
     print(df_to.head(n=5))
     multiindex = df_to.set_index(['Sport','Year',variable_of_int])
@@ -206,22 +204,21 @@ def perform_PCA_analysis(variable_of_int,path):
             dict_of_0 = prepare_data(multiindex,sports[0], nan='no')
             if dict_of_0 is not None:
                     pca_info = calculate_PCA(dict_of_0['prepared_data'])
-                    plot_bar_PCA(pca_info['per_var'],pca_info['labels'],sports[0],variable_of_int,path)
-                    plot_scatter_PCA(pca_info['pca_data'],dict_of_0['listof_indices'],pca_info['labels'],pca_info['per_var'],sports[0],variable_of_int,path)
-                    top10_info = top_10_PCA(pca_info['pca'],dict_of_0['listof_columns'],sports[0],variable_of_int,path)
+                    plot_bar_PCA(pca_info['per_var'],pca_info['labels'],sports[0],variable_of_int)
+                    plot_scatter_PCA(pca_info['pca_data'],dict_of_0['listof_indices'],pca_info['labels'],pca_info['per_var'],sports[0],variable_of_int)
+                    top10_info = top_10_PCA(pca_info['pca'],dict_of_0['listof_columns'],sports[0],variable_of_int)
                     print(top10_info.head(n=5))
         except AttributeError:
             print('Some sort of attribute error, something breaks with relation to PC2, sport:%s' %sports[0])
         
         
-#input the first part of the path where you placed the github repository into the second variable.
-#remember to include the r before the quotations
-perform_trend_analysis('NOC',r'C:\Users\nikhil\Documents\GitHub')
-perform_trend_analysis('Height',r'C:\Users\nikhil\Documents\GitHub')
-perform_trend_analysis('Weight',r'C:\Users\nikhil\Documents\GitHub')
-perform_trend_analysis('Age',r'C:\Users\nikhil\Documents\GitHub')
 
-#perform_PCA_analysis('NOC',r'C:\Users\nikhil\Documents\GitHub')
-#perform_PCA_analysis('Height',r'C:\Users\nikhil\Documents\GitHub')
-#perform_PCA_analysis('Weight',r'C:\Users\nikhil\Documents\GitHub')
-#perform_PCA_analysis('Age',r'C:\Users\nikhil\Documents\GitHub')
+perform_trend_analysis('NOC')
+perform_trend_analysis('Height')
+perform_trend_analysis('Weight')
+perform_trend_analysis('Age')
+
+perform_PCA_analysis('NOC')
+perform_PCA_analysis('Height')
+perform_PCA_analysis('Weight')
+perform_PCA_analysis('Age')
