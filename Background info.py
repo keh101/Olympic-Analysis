@@ -11,12 +11,14 @@ import matplotlib.animation as animation
 import matplotlib.pyplot as plt
 ffmpegpath = os.path.abspath("C:/ffmpeg/bin/ffmpeg.exe")
 plt.rcParams["animation.ffmpeg_path"] = ffmpegpath
+
+# Check if ffmpeg is installed and set correctly.
 print(animation.FFMpegWriter.bin_path())
 print(animation.FFMpegWriter.isAvailable())
 import numpy as np
 import seaborn as sns
 
-athlete_events = pandas.read_csv('./athlete_events.csv')
+athlete_events = pandas.read_csv('./120-years-of-olympic-history-athletes-and-results/athlete_events.csv')
 plt.style.use('ggplot')
 
 
@@ -40,7 +42,7 @@ plt.title('Summer VS. Winter')
 plt.show()
 
 
-# In[15]:
+# In[4]:
 
 
 # What's the number of events each year?
@@ -82,28 +84,11 @@ for k,v in events_per_year_sum.items():
         numbers.append(v)
         years.append(int(k))
 numbers = np.array(numbers).reshape(-1, 1)
-#years = np.array(years).reshape(-1, 1)
-#events_summer = pandas.DataFrame(events_counter_sum, [1896 + 2*i for i in range(61)])
+
 events_summer = pandas.DataFrame(numbers, years)
 events_summer.columns = {title}
 
 writer = animation.FFMpegWriter(fps=2, metadata=None, bitrate=1800)
-#writer = Writer(fps=20, metadata=dict(artist='Me'), bitrate=1800)
-
-#fig1 = plt.figure(figsize=(10,6))
-#plt.xlim(1892, 2018)
-#plt.ylim(np.min(events_summer)[0], np.max(events_summer)[0])
-#plt.xlabel('Year', fontsize=20)
-#plt.ylabel(title, fontsize=20)
-#plt.title('Number of events in summer games', fontsize=20)
-#def animate(i):
-#    data = events_summer.iloc[:i+1]
-#    p = sns.lineplot(x=data.index, y=data[title], data=data, color = 'r')
-#    p.tick_params(labelsize=17)
-#    plt.setp(p.lines, linewidth=7)
-#ani = animation.FuncAnimation(fig1, animate, frames=len(numbers), repeat=True)
-#plt.show()
-#ani.save('events in summer games.mp4', writer=writer)
 
 
 ymax = np.max(events_summer)[0]
@@ -111,7 +96,11 @@ print(ymax)
 fig2 = plt.figure(figsize=(10,6))
 #plt.xlim(0, 4)
 #plt.ylim(0, ymax)
-def animate1(i):
+def animate_summer(i):
+    '''
+    generates one frame for the Gif version of bar plot of Number of Events Each Year.
+    input: i ---- the ith frame.
+    '''
     plt.cla()
     plt.xlim(0, 4)
     plt.ylim(0, ymax)
@@ -121,7 +110,7 @@ def animate1(i):
     data = events_summer.iloc[int(i):int(i+1)]
     p = sns.barplot(x=data.index, y=data[title], data=data, errwidth = 2, color = 'lightsalmon')
     p.tick_params(labelsize=17)
-ani1 = animation.FuncAnimation(fig2, animate1, frames=29, repeat=True)
+ani1 = animation.FuncAnimation(fig2, animate_summer, frames=29, repeat=True)
 plt.show()
 ani1.save('changes of number of events in summer.mp4', writer=writer)
 
@@ -143,7 +132,7 @@ plt.title('Female VS. Male')
 plt.show()
 
 
-# In[67]:
+# In[5]:
 
 
 # GIF Version
@@ -171,6 +160,10 @@ writer = animation.FFMpegWriter(fps=2, metadata=None, bitrate=1800)
 
 fig1 = plt.figure(figsize=(10,6))
 def animate_gender1(i):
+    '''
+    generates the one frame of line plots for Gender Numbers Inequality.
+    input: i ---- the ith frame.
+    '''
     plt.cla()
     plt.xlim(1892, 2018)
     plt.ylim([0, np.max([np.max(counter_f), np.max(counter_m)])])
@@ -199,6 +192,10 @@ print(ymax)
 print(len(counter_f), len(counter_m))
 fig2, axes = plt.subplots(1, 2, sharey=True, figsize=(10,6))
 def animate_gender2(i):
+    '''
+    generates the one frame of bar plots for Gender Numbers Inequality.
+    input: i ---- the ith frame.
+    '''
     axes[0].cla()
     axes[1].cla()
     plt.ylim(0, ymax)
@@ -243,6 +240,10 @@ age_male = age[age.Sex == 'M']
 writer = animation.FFMpegWriter(fps=2, metadata=None, bitrate=1800)
 fig1 = plt.figure(figsize=(10,6))
 def animate_age_hist(i):
+    '''
+    generates the one frame of histogram for Age Distribution.
+    input: i ---- the ith frame.
+    '''
     plt.cla()
     plt.xlim(0, 80)
     plt.ylim(0, 2300)
@@ -250,9 +251,6 @@ def animate_age_hist(i):
     plt.ylabel('Number of Athletes', fontsize=20)
     plt.title('Histogram of Female And Male Athletes Age Each Year', fontsize=20)
     
-   
-    #p2 = sns.distplot(age_female[age_female.Year == years[i]]['Age'], color = 'turquoise', label='Male')
-    #p1 = sns.distplot(age_male[age_male.Year == years[i]]['Age'], color = 'plum', label='Female')
     data_f = list(age_female[age_female.Year == years[i]]['Age'].values)
     data_m = list(age_male[age_male.Year == years[i]]['Age'].values)
     plt.hist([data_f, data_m], bins = 30, normed=False, 
@@ -288,12 +286,13 @@ sports_color = ['brown', 'darkorange', 'goldenrod', 'gold', 'yellow']
 
 writer = animation.FFMpegWriter(fps=2, metadata=None, bitrate=1800)
 fig1 = plt.figure(figsize=(12,8))
-def animate_sports_pie(i):
+def animate_sports_pie_summer(i):
+    '''
+    generates the one frame of pie chart for Top 5 Popular Sports in Summer Games.
+    input: i ---- the ith frame.
+    '''
+    
     plt.cla()
-    #plt.xlim(0, 80)
-    #plt.ylim(0, 2300)
-    #plt.xlabel('A', fontsize=20)
-    #plt.ylabel('Number of Athletes', fontsize=20)
     plt.title('Pie Chart of Top 5 Popular Sports in Summer Games', fontsize=20)
     
     data = sports[sports.Year == years[i]]
@@ -318,7 +317,7 @@ def animate_sports_pie(i):
     plt.pie(num, explode=[0.1,0,0,0,0], colors=sports_color, labels=labels, autopct='%1.1f%%',pctdistance=0.8, shadow=True)
     plt.text(0.88, 1.0, 'Year: ' + str(years[i]), size = 20, family = "fantasy", color = "Black", style = "italic")
     plt.legend(loc='upper left',frameon=False)
-ani1 = animation.FuncAnimation(fig1, animate_sports_pie, frames=len(years), repeat=True)
+ani1 = animation.FuncAnimation(fig1, animate_sports_pie_summer, frames=len(years), repeat=True)
 plt.show()
 ani1.save('Pie Chart of Top 5 Popular Sports in Summer Games.mp4', writer=writer)
 
@@ -340,7 +339,12 @@ sports_color = ['darkblue', 'cornflowerblue', 'deepskyblue', 'skyblue', 'lightbl
 
 writer = animation.FFMpegWriter(fps=2, metadata=None, bitrate=1800)
 fig1 = plt.figure(figsize=(12,8))
-def animate_sports_pie(i):
+def animate_sports_pie_winter(i):
+    '''
+    generates the one frame of pie chart for Top 5 Popular Sports in Winter Games.
+    input: i ---- the ith frame.
+    '''
+        
     plt.cla()
     plt.title('Pie Chart of Top 5 Popular Sports in Winter Games', fontsize=20)
     
@@ -366,7 +370,7 @@ def animate_sports_pie(i):
     plt.pie(num, explode=[0.1,0,0,0,0], colors=sports_color, labels=labels, autopct='%1.1f%%',pctdistance=0.8, shadow=True)
     plt.text(0.88, 1.0, 'Year: ' + str(years[i]), size = 20, family = "fantasy", color = "Black", style = "italic")
     plt.legend(loc='upper left',frameon=False)
-ani1 = animation.FuncAnimation(fig1, animate_sports_pie, frames=len(years), repeat=True)
+ani1 = animation.FuncAnimation(fig1, animate_sports_pie_winter, frames=len(years), repeat=True)
 plt.show()
 ani1.save('Pie Chart of Top 5 Popular Sports in Winter Games.mp4', writer=writer)
 
@@ -374,8 +378,10 @@ ani1.save('Pie Chart of Top 5 Popular Sports in Winter Games.mp4', writer=writer
 # In[9]:
 
 
+# Correlations between Medal counts and GDP
+
 get_ipython().run_line_magic('matplotlib', 'inline')
-country_info = pandas.read_csv('./dictionary.csv')
+country_info = pandas.read_csv('./olympic-games/dictionary.csv')
 country = country_info['Country'].values
 population = country_info['Population'].values
 GDP = country_info['GDP per Capita'].values
@@ -415,7 +421,7 @@ print(reg.intercept_, reg.coef_)
 
 
 country_code = country_info['Code'].values
-Medal_2016 = pandas.read_csv('./2016_country_sport_og.csv')
+Medal_2016 = pandas.read_csv('./olympic-games/2016_country_sport_og.csv')
 num_medal_2016 = []
 for c in country_code:
     num_medal_2016.append(sum(Medal_2016[Medal_2016.NOC == c]['count'].values))
