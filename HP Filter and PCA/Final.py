@@ -37,9 +37,6 @@ def prepare_data(multiindex,Sport, nan='yes'):
         firstly = wrestles.dropna(axis=0, how='all', thresh=None, subset=None, inplace=False)
         #drops all columns that contain only NAs
         secondly = firstly.dropna(axis=1, how='all', thresh=None, subset=None, inplace=False)
-        #replce nan with 0 to ready dead for singular value decomposition/PCA
-        multi_ind2 = secondly.where((pd.notnull(secondly)),0)
-        print(multi_ind2)
         #put index and column names into lists
         listof_indices = secondly.index.tolist()
         listof_columns = list(secondly)
@@ -48,6 +45,19 @@ def prepare_data(multiindex,Sport, nan='yes'):
             #return nan containing OR 0 containing prepared_data 
             if nan == 'yes':
                 return{'listof_indices':listof_indices,'listof_columns':listof_columns,'prepared_data':secondly}
+        
+        wrestles=wrestles.T
+        firstly = wrestles.dropna(axis=0, how='all', thresh=None, subset=None, inplace=False)
+        #drops all columns that contain only NAs
+        secondly = firstly.dropna(axis=1, how='all', thresh=None, subset=None, inplace=False)
+        #replce nan with 0 to ready dead for singular value decomposition/PCA
+        multi_ind2 = secondly.where((pd.notnull(secondly)),0)
+        print(multi_ind2)
+        #put index and column names into lists
+        listof_indices = secondly.index.tolist()
+        listof_columns = list(secondly)
+        
+        if len(listof_indices) >0:    
             if nan == 'no':
                 return{'listof_indices':listof_indices,'listof_columns':listof_columns,'prepared_data':multi_ind2}
             print('Data for %s prepared successfully'%Sport)
@@ -119,6 +129,7 @@ def plot_bar_PCA(per_var,labels,Sport,variable_of_int):
     Plots PCA bar graph data showing which PC's contribute to the most deviation
     """
     #plots PCA as bar chart showing which PCs account for the most variance
+    plt.figure()
     plt.bar(x=range(1,len(per_var)+1),height=per_var,tick_label=labels)
     plt.ylabel('Percentage of Explained Variance')
     plt.xlabel('Principal Component')
@@ -132,7 +143,7 @@ def plot_scatter_PCA(pca_data,listof_indices,labels,per_var,Sport, variable_of_i
     """
     #plots PCA as scatter plot to show sample deviance
     pca_df = pd.DataFrame(pca_data,index=listof_indices, columns =labels)
-    
+    plt.figure()
     fig2 = plt.scatter(pca_df.PC1,pca_df.PC2)
     plt.title('%s PCA Graph'%Sport)
     plt.xlabel('PC1-{0}%'.format(per_var[0]))
@@ -186,17 +197,17 @@ def perform_PCA_analysis(variable_of_int):
     Calls PCA functions
     """
     #read in sports as a list
-    with open(r'\120-years-of-olympic-history-athletes-and-results\sports.csv', 'r') as f:
+    with open(r'.\120-years-of-olympic-history-athletes-and-results\sports.csv', 'r') as f:
         reader = csv.reader(f)
         listofsports = list(reader)
     #read in data
-    df_to = pd.read_csv(r"/AnalyzedData/%s_Sport_Year.csv"%variable_of_int)
+    df_to = pd.read_csv(r"./AnalyzedData/%s_Sport_Year.csv"%variable_of_int)
     df_to = df_to.drop(['Unnamed: 0'], axis=1)
     print(df_to.head(n=5))
     multiindex = df_to.set_index(['Sport','Year',variable_of_int])
     print(multiindex.head(n=5))
     #Calculate and graph HP data for variable_of_int
-    for sports in listofsports[63:]:
+    for sports in listofsports:
         try:
             print(sports)
             dict_of_0 = prepare_data(multiindex,sports[0], nan='no')
@@ -208,7 +219,8 @@ def perform_PCA_analysis(variable_of_int):
                     print(top10_info.head(n=5))
         except AttributeError:
             print('Some sort of attribute error, something breaks with relation to PC2, sport:%s' %sports[0])
-        
+        except KeyError:
+            print('Shape of passed values does not match indices')
         
 
 perform_trend_analysis('NOC')
@@ -216,7 +228,6 @@ perform_trend_analysis('Height')
 perform_trend_analysis('Weight')
 perform_trend_analysis('Age')
 
-perform_PCA_analysis('NOC')
 perform_PCA_analysis('Height')
 perform_PCA_analysis('Weight')
 perform_PCA_analysis('Age')
