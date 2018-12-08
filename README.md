@@ -22,4 +22,10 @@ Before running, please make sure that the following packages are installed:
      For windows users, use pip install XXX command.
  
  
+# How to run HP Filter and PCA
+This folder contains an earlier clone of all relevant datasets in Olympic-Analysis with slight changes to overa;; data structures along with a large number of added graphs and datasets.
+Some data preprocessing was done with gdpvssports however the only file to run to get relevant graphs is "Final.py" or "Final.ipnyb".
 
+Downloading the repository and running it should be work sufficiently well.
+
+To plot a subset of the data rather than the thousands of generated graphs, on line 210 in the function perform_PCA_analysis and on line 182 in the function perform_trend _analysis, change "for sports in listofsports:"  to "for sports in listofsports[63:]:"
